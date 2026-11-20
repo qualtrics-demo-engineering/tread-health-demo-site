@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patient Stories | Tread Health</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body id="page-patient-stories" data-page="patient-stories" data-section="about">
+
+<!-- Demo Disclaimer Banner (NOT a real healthcare provider) -->
+<div class="demo-banner">
+  ⚠️ This is a fictional demo website built for a product demonstration. Tread Health is not a real healthcare provider. For medical emergencies, call 911.
+</div>
+
+<!-- Top Utility Bar -->
+<div class="utility-bar">
+  <div class="utility-bar__emergency">
+    <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+    <span>Emergency? Call 911</span>
+  </div>
+  <div class="utility-bar__links">
+    <a href="careers.html">Careers</a>
+    <a href="giving.html">Giving</a>
+    <a href="myportal.html">Patient Portal</a>
+    <a href="myportal-billing.html">Pay a Bill</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container-lg header-inner">
+
+    <a href="index.html" class="logo">
+      <img src="assets/tread-logo.png" alt="Tread Health Logo">
+    </a>
+
+    <nav class="main-nav">
+      <a href="doctors.html" class="nav-link">Find a Doctor</a>
+      <a href="locations.html" class="nav-link">Locations</a>
+
+      <div class="dropdown">
+        <a href="services.html" class="dropdown-toggle">
+          Services
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </a>
+        <div class="dropdown-menu">
+          <div>
+            <h4>Featured Specialties</h4>
+            <ul>
+              <li><a href="services-primary-care.html">Primary Care</a></li>
+              <li><a href="services-pediatrics.html">Pediatrics</a></li>
+              <li><a href="services-cardiology.html">Cardiology</a></li>
+              <li><a href="services-orthopedics.html">Orthopedics</a></li>
+              <li><a href="services-oncology.html">Oncology</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>More Services</h4>
+            <ul>
+              <li><a href="services-urgent-care.html">Urgent Care</a></li>
+              <li><a href="virtual-care.html">Virtual Care</a></li>
+              <li><a href="services-behavioral-health.html">Behavioral Health</a></li>
+              <li><a href="services-imaging.html">Imaging Services</a></li>
+              <li><a href="services-pharmacy.html">Pharmacy</a></li>
+              <li><a href="services.html" class="link-arrow">View All Services &rarr;</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="patients-visitors.html" class="dropdown-toggle">
+          Patients &amp; Visitors
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </a>
+        <div class="dropdown-menu">
+          <div>
+            <h4>MyPortal</h4>
+            <ul>
+              <li><a href="myportal.html">Sign In / Register</a></li>
+              <li><a href="myportal-billing.html">Pay a Bill</a></li>
+              <li><a href="symptom-checker.html">Symptom Checker</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Visiting</h4>
+            <ul>
+              <li><a href="accepted-insurance.html">Accepted Insurance</a></li>
+              <li><a href="visitor-guidelines.html">Visitor Guidelines</a></li>
+              <li><a href="locations.html" class="link-arrow">Find a Location &rarr;</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header-actions">
+      <a href="appointments.html" class="btn btn-primary">Schedule Appointment</a>
+    </div>
+
+    <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="doctors.html">Find a Doctor</a>
+    <a href="locations.html">Locations</a>
+
+    <p class="section-label">Services</p>
+    <a href="services-primary-care.html" class="sub-link">Primary Care</a>
+    <a href="services-pediatrics.html" class="sub-link">Pediatrics</a>
+    <a href="services-cardiology.html" class="sub-link">Cardiology</a>
+    <a href="services-orthopedics.html" class="sub-link">Orthopedics</a>
+    <a href="services-oncology.html" class="sub-link">Oncology</a>
+    <a href="services-urgent-care.html" class="sub-link">Urgent Care</a>
+    <a href="virtual-care.html" class="sub-link">Virtual Care</a>
+    <a href="services-behavioral-health.html" class="sub-link">Behavioral Health</a>
+    <a href="services-imaging.html" class="sub-link">Imaging Services</a>
+    <a href="services-pharmacy.html" class="sub-link">Pharmacy</a>
+    <a href="services.html" class="sub-link" style="color:var(--blue);">View All Services &rarr;</a>
+
+    <p class="section-label">Patients &amp; Visitors</p>
+    <a href="myportal.html" class="sub-link">MyPortal Sign In</a>
+    <a href="myportal-billing.html" class="sub-link">Pay a Bill</a>
+    <a href="symptom-checker.html" class="sub-link">Symptom Checker</a>
+    <a href="accepted-insurance.html" class="sub-link">Accepted Insurance</a>
+    <a href="visitor-guidelines.html" class="sub-link">Visitor Guidelines</a>
+
+    <a href="appointments.html" class="btn btn-primary">Schedule Appointment</a>
+  </div>
+</header>
+
+<nav class="breadcrumb"><div class="container"><a href="index.html">Home</a> / Patient Stories</div></nav>
+
+<section class="svc-hero svc-hero--coral">
+  <div class="svc-hero__grid">
+    <div class="svc-hero__copy">
+      <h1>Patient Stories</h1>
+      <p class="lead">Moments of care, told by the neighbors who lived them. (These stories are fictional and created for demonstration purposes.)</p>
+      <div class="fact-chips"><span><img src="assets/doodles/heart.svg" alt="">Real moments</span><span><img src="assets/doodles/speech.svg" alt="">In their words</span><span><img src="assets/doodles/star.svg" alt="">Fictional demo</span></div>
+      <div class="svc-hero__actions"><a href="#gratitude-wall" class="btn btn-primary btn-lg">See the Gratitude Wall</a><a href="appointments.html" class="btn btn-outline btn-lg">Book a visit</a></div>
+    </div>
+    <div class="svc-hero__art">
+      <img class="doodle bob" src="assets/doodles/heart.svg" alt="" aria-hidden="true" style="width:60px; top:-10px; right:2%; --r:8deg;"><img class="doodle bob-slow" src="assets/doodles/flower.svg" alt="" aria-hidden="true" style="width:52px; bottom:20%; left:-3%; --r:-10deg;"><img class="doodle bob-slow" src="assets/doodles/sparkle.svg" alt="" aria-hidden="true" style="width:36px; top:36%; right:-3%;">
+      <div class="photo-frame"><img src="assets/img/gratitude-wall.jpg" alt="A hospital atrium wall covered in colorful heart-shaped notes shaped like a tree, with volunteers and families gathered around"></div>
+      <span class="callout" style="left:6%; bottom:-4px; rotate:-3deg;">say thank you</span>
+    </div>
+  </div>
+</section>
+
+<div class="page-wrap">
+  <section>
+    <div class="story-long">
+      <div class="story-long__photo"><div class="photo-frame"><img src="assets/img/care-pediatrics.jpg" alt="Maya and the footprints that led her to the right room" loading="lazy"></div><img class="doodle bob" src="assets/doodles/teddy.svg" alt="" aria-hidden="true" style="width:64px; top:-12px; right:4%; --r:8deg;"><img class="doodle bob-slow" src="assets/doodles/sparkle.svg" alt="" aria-hidden="true" style="width:32px; bottom:-4px; left:6%;"></div>
+      <div>
+        <h2>Maya and the footprints that led her to the right room</h2>
+        <p>Maya was nervous about her first shot at a new clinic. Then she spotted the colorful footprints on the floor and decided to follow them, hopping the whole way to her exam room.</p><p>Dr. Alvarez let Maya listen to her own heartbeat first, introduced a stuffed fox named Biscuit, and let Maya choose the sticker. &ldquo;She asked if she could come back tomorrow,&rdquo; her dad says.</p>
+        <div class="meta"><span>Maya, age 7</span><a href="services-pediatrics.html">Pediatrics</a><a href="locations.html">Tread Clinic</a></div>
+      </div>
+    </div>
+    <div class="story-long">
+      <div class="story-long__photo"><div class="photo-frame"><img src="assets/img/care-orthopedics.jpg" alt="Walter&rsquo;s plan to dance at his granddaughter&rsquo;s wedding" loading="lazy"></div><img class="doodle bob" src="assets/doodles/bone.svg" alt="" aria-hidden="true" style="width:64px; top:-12px; right:4%; --r:8deg;"><img class="doodle bob-slow" src="assets/doodles/sparkle.svg" alt="" aria-hidden="true" style="width:32px; bottom:-4px; left:6%;"></div>
+      <div>
+        <h2>Walter&rsquo;s plan to dance at his granddaughter&rsquo;s wedding</h2>
+        <p>Walter had a goal: to dance at his granddaughter&rsquo;s wedding. His knee had other ideas. At Tread North, Dr. Osei started with a simple question about what Walter wanted to get back to doing.</p><p>A therapy plan, a few months of patience, and a lot of encouragement from his care team later, Walter led the first dance. &ldquo;I had a plan, and everyone knew it,&rdquo; he says.</p>
+        <div class="meta"><span>Walter, age 68</span><a href="services-orthopedics.html">Orthopedics</a><a href="locations.html">Tread North</a></div>
+      </div>
+    </div>
+    <div class="story-long">
+      <div class="story-long__photo"><div class="photo-frame"><img src="assets/img/care-oncology.jpg" alt="Rosa and a team that knew her name" loading="lazy"></div><img class="doodle bob" src="assets/doodles/ribbon.svg" alt="" aria-hidden="true" style="width:64px; top:-12px; right:4%; --r:8deg;"><img class="doodle bob-slow" src="assets/doodles/sparkle.svg" alt="" aria-hidden="true" style="width:32px; bottom:-4px; left:6%;"></div>
+      <div>
+        <h2>Rosa and a team that knew her name</h2>
+        <p>When Rosa began treatment, the hardest part was feeling like she had to explain herself over and over. Her nurse navigator changed that. She learned Rosa&rsquo;s story, kept everyone on the same page, and answered every call.</p><p>Rosa now volunteers on the Gratitude Wall, where she helps new patients write their first note. &ldquo;I never felt like a chart,&rdquo; she says.</p>
+        <div class="meta"><span>Rosa, age 54</span><a href="services-oncology.html">Oncology</a><a href="locations.html">Tread Medical Center</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 id="gratitude-wall">The Gratitude Wall</h2>
+    <p class="intro">Leave a note, take a note. Here are a few from our atrium wall.</p>
+    <div class="note-wall"><div class="note">Thank you for explaining it twice. And a third time!<small>A grateful dad</small></div><div class="note">Dr. Alvarez + Biscuit the fox = best checkup ever.<small>Maya, age 7</small></div><div class="note">You made a scary day feel safe.<small>Rosa</small></div><div class="note">The footprints got us to the right room!<small>A first-time visitor</small></div><div class="note">Parking was easy. So was everything else.<small>Tom</small></div><div class="note">My new knee says thanks, too.<small>Walter</small></div><div class="note">Blue vest volunteers are the best.<small>Priya</small></div><div class="note">Thank you for listening.<small>Alex</small></div><div class="note">Great nurses. Even greater snacks.<small>Devon</small></div><div class="note">We came for a checkup and left with a sticker.<small>Jordan</small></div></div>
+  </section>
+
+  <div id="qsi-survey-patient-stories" class="tread-embedded-feedback"></div>
+</div>
+
+<section class="cta-band">
+  <img class="doodle " src="assets/doodles/sparkle.svg" alt="" aria-hidden="true" style="width:54px; top:16%; left:8%;">
+  <img class="doodle " src="assets/doodles/balloons.svg" alt="" aria-hidden="true" style="width:80px; bottom:12%; right:8%;">
+  <img class="doodle " src="assets/doodles/star.svg" alt="" aria-hidden="true" style="width:40px; top:20%; right:22%;">
+  <h2>Have a story to share?</h2>
+  <p>Tell us about a moment that made your day better.</p>
+  <a href="contact.html" class="btn btn-white btn-lg">Share your story</a>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-grid">
+
+    <div class="footer-col footer-brand">
+      <a href="index.html">
+        <img src="assets/tread-logo.png" alt="Tread Health Logo">
+      </a>
+      <p>Dedicated to supporting you at every stage of your health journey.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Tread Health on X">
+          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+        </a>
+        <a href="#" aria-label="Tread Health on LinkedIn">
+          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+      </div>
+    </div>
+
+        <div class="footer-col">
+      <h4>I Would Like To</h4>
+      <ul>
+        <li><a href="doctors.html">Find a Doctor</a></li>
+        <li><a href="locations.html">Search Locations</a></li>
+        <li><a href="services.html">Browse Services</a></li>
+        <li><a href="symptom-checker.html">Check My Symptoms</a></li>
+        <li><a href="appointments.html">Request an Appointment</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Patients &amp; Visitors</h4>
+      <ul>
+        <li><a href="myportal.html">MyPortal Sign In</a></li>
+        <li><a href="myportal-billing.html">Pay a Bill</a></li>
+        <li><a href="accepted-insurance.html">Accepted Insurance</a></li>
+        <li><a href="visitor-guidelines.html">Visitor Guidelines</a></li>
+        <li><a href="patient-stories.html">Patient Stories</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services-primary-care.html">Primary Care</a></li>
+        <li><a href="services-pediatrics.html">Pediatrics</a></li>
+        <li><a href="services-cardiology.html">Cardiology</a></li>
+        <li><a href="services-urgent-care.html">Urgent Care</a></li>
+        <li><a href="virtual-care.html">Virtual Care</a></li>
+        <li><a href="services-behavioral-health.html">Behavioral Health</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>About Tread Health</h4>
+      <ul>
+        <li><a href="our-story.html">Our Story</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="volunteering.html">Volunteering</a></li>
+        <li><a href="giving.html">Giving</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Tread Health System. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="coming-soon.html?page=Privacy+Policy">Privacy Policy</a>
+      <a href="coming-soon.html?page=Terms+of+Use">Terms of Use</a>
+      <a href="coming-soon.html?page=Notice+of+Privacy+Practices">Notice of Privacy Practices</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Toggle the mobile menu open/closed. No external libraries needed.
+  document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+    var menu = document.getElementById('mobile-menu');
+    var isOpen = menu.classList.toggle('is-open');
+    this.setAttribute('aria-expanded', isOpen);
+  });
+</script>
+
+<!-- Playful motion (scroll pop-ins, count-ups). Safe to remove. -->
+<script src="motion.js" defer></script>
+
+<!-- Page info for Qualtrics targeting (JavaScript variable: window.treadPageInfo) -->
+<script>window.treadPageInfo = {"site": "tread-health", "page": "patient-stories", "section": "about", "flow": "stories"};</script>
+<!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
+
+<script type='text/javascript'>
+
+(function(){var g=function(g){
+
+this.go=function(){var a=document.createElement("script");a.type="text/javascript";a.src=g;document.body&&document.body.appendChild(a)};
+
+this.start=function(){var t=this;"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",function(){t.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){t.go()}):t.go()};};
+
+try{(new g("https://zn0jvaixpvu5igezz-qdemo.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_0JvaiXpVU5igeZz")).start()}catch(i){}})();
+
+</script><div id='ZN_0JvaiXpVU5igeZz'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+
+<!--END WEBSITE FEEDBACK SNIPPET-->
+</body>
+</html>

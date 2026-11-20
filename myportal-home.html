@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyPortal Dashboard | Tread Health</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body id="page-myportal-home" data-page="myportal-home" data-section="myportal">
+
+<!-- Demo Disclaimer Banner (NOT a real healthcare provider) -->
+<div class="demo-banner">
+  ⚠️ This is a fictional demo website built for a product demonstration. Tread Health is not a real healthcare provider. For medical emergencies, call 911.
+</div>
+
+<!-- Top Utility Bar -->
+<div class="utility-bar">
+  <div class="utility-bar__emergency">
+    <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+    <span>Emergency? Call 911</span>
+  </div>
+  <div class="utility-bar__links">
+    <a href="careers.html">Careers</a>
+    <a href="giving.html">Giving</a>
+    <a href="myportal.html">Patient Portal</a>
+    <a href="myportal-billing.html">Pay a Bill</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container-lg header-inner">
+
+    <a href="index.html" class="logo">
+      <img src="assets/tread-logo.png" alt="Tread Health Logo">
+    </a>
+
+    <nav class="main-nav">
+      <a href="doctors.html" class="nav-link">Find a Doctor</a>
+      <a href="locations.html" class="nav-link">Locations</a>
+
+      <div class="dropdown">
+        <a href="services.html" class="dropdown-toggle">
+          Services
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </a>
+        <div class="dropdown-menu">
+          <div>
+            <h4>Featured Specialties</h4>
+            <ul>
+              <li><a href="services-primary-care.html">Primary Care</a></li>
+              <li><a href="services-pediatrics.html">Pediatrics</a></li>
+              <li><a href="services-cardiology.html">Cardiology</a></li>
+              <li><a href="services-orthopedics.html">Orthopedics</a></li>
+              <li><a href="services-oncology.html">Oncology</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>More Services</h4>
+            <ul>
+              <li><a href="services-urgent-care.html">Urgent Care</a></li>
+              <li><a href="virtual-care.html">Virtual Care</a></li>
+              <li><a href="services-behavioral-health.html">Behavioral Health</a></li>
+              <li><a href="services-imaging.html">Imaging Services</a></li>
+              <li><a href="services-pharmacy.html">Pharmacy</a></li>
+              <li><a href="services.html" class="link-arrow">View All Services &rarr;</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="patients-visitors.html" class="dropdown-toggle">
+          Patients &amp; Visitors
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </a>
+        <div class="dropdown-menu">
+          <div>
+            <h4>MyPortal</h4>
+            <ul>
+              <li><a href="myportal.html">Sign In / Register</a></li>
+              <li><a href="myportal-billing.html">Pay a Bill</a></li>
+              <li><a href="symptom-checker.html">Symptom Checker</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Visiting</h4>
+            <ul>
+              <li><a href="accepted-insurance.html">Accepted Insurance</a></li>
+              <li><a href="visitor-guidelines.html">Visitor Guidelines</a></li>
+              <li><a href="locations.html" class="link-arrow">Find a Location &rarr;</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header-actions">
+      <a href="appointments.html" class="btn btn-primary">Schedule Appointment</a>
+    </div>
+
+    <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="doctors.html">Find a Doctor</a>
+    <a href="locations.html">Locations</a>
+
+    <p class="section-label">Services</p>
+    <a href="services-primary-care.html" class="sub-link">Primary Care</a>
+    <a href="services-pediatrics.html" class="sub-link">Pediatrics</a>
+    <a href="services-cardiology.html" class="sub-link">Cardiology</a>
+    <a href="services-orthopedics.html" class="sub-link">Orthopedics</a>
+    <a href="services-oncology.html" class="sub-link">Oncology</a>
+    <a href="services-urgent-care.html" class="sub-link">Urgent Care</a>
+    <a href="virtual-care.html" class="sub-link">Virtual Care</a>
+    <a href="services-behavioral-health.html" class="sub-link">Behavioral Health</a>
+    <a href="services-imaging.html" class="sub-link">Imaging Services</a>
+    <a href="services-pharmacy.html" class="sub-link">Pharmacy</a>
+    <a href="services.html" class="sub-link" style="color:var(--blue);">View All Services &rarr;</a>
+
+    <p class="section-label">Patients &amp; Visitors</p>
+    <a href="myportal.html" class="sub-link">MyPortal Sign In</a>
+    <a href="myportal-billing.html" class="sub-link">Pay a Bill</a>
+    <a href="symptom-checker.html" class="sub-link">Symptom Checker</a>
+    <a href="accepted-insurance.html" class="sub-link">Accepted Insurance</a>
+    <a href="visitor-guidelines.html" class="sub-link">Visitor Guidelines</a>
+
+    <a href="appointments.html" class="btn btn-primary">Schedule Appointment</a>
+  </div>
+</header>
+
+<nav class="breadcrumb"><div class="container"><a href="index.html">Home</a> / <a href="myportal.html">MyPortal</a> / Dashboard</div></nav>
+
+<div class="pt-shell">
+  <aside class="pt-side">
+    <div class="pt-user"><div class="avatar">AM</div><div><strong>Alex Morgan</strong><span>MyPortal member</span></div></div>
+    <nav class="pt-nav" id="pt-nav" aria-label="MyPortal sections">
+      <button type="button" data-tab="overview" class="is-active"><img src="assets/doodles/sun.svg" alt="">Overview</button><button type="button" data-tab="appointments" class=""><img src="assets/doodles/calendar.svg" alt="">Appointments<span class=pt-count>2</span></button><button type="button" data-tab="results" class=""><img src="assets/doodles/clipboard.svg" alt="">Test results<span class=pt-count>1</span></button><button type="button" data-tab="messages" class=""><img src="assets/doodles/speech.svg" alt="">Messages<span class=pt-count>2</span></button><button type="button" data-tab="medications" class=""><img src="assets/doodles/pill.svg" alt="">Medications</button><button type="button" data-tab="team" class=""><img src="assets/doodles/stethoscope.svg" alt="">Care team</button>
+      <a href="myportal-billing.html"><img src="assets/doodles/shield.svg" alt="">Billing<span class="pt-count" style="margin-left:auto; background:var(--sun); color:var(--ink); border-radius:999px; font-size:.75rem; padding:2px 8px; font-weight:800;">$142</span></a>
+      <a href="myportal.html"><img src="assets/doodles/arrow-right.svg" alt="">Sign out</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section class="pt-panel is-active" id="panel-overview" data-panel="overview">
+      <div class="pt-head"><h1>Welcome back, Alex</h1><p>Here is what is happening with your care today.</p></div>
+      <div class="pt-grid">
+        <div class="pt-card pt-card--blue span-2">
+          <h3><img src="assets/doodles/calendar.svg" alt="">Your next appointment</h3>
+          <div class="pt-row" style="border-top:0;"><img class="avatar" src="assets/img/doctor-chen.jpg" alt="Dr. Maria Chen, MD"><div class="grow"><div class="pt-big" style="font-size:1.7rem;">Tuesday, Dec 1 at 10:30 AM</div><small>Annual wellness visit with Dr. Maria Chen, MD, Tread Medical Center</small></div></div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;"><button type="button" class="btn btn-white" data-go="appointments">Reschedule</button><a href="appointments.html" class="btn btn-white">Book another visit</a></div>
+        </div>
+        <div class="pt-card"><h3><img src="assets/doodles/clipboard.svg" alt="">New test result</h3><div class="pt-row" style="border-top:0;"><div class="grow"><strong>Cholesterol panel</strong><small>Ready on Nov 17 from Dr. Chen</small></div><span class="status-pill status-new">New</span></div><button type="button" class="btn btn-outline btn-sm" data-go="results" style="margin-top:6px;">View result</button></div>
+        <div class="pt-card"><h3><img src="assets/doodles/speech.svg" alt="">Messages</h3><div class="pt-big">2 unread</div><p style="margin:0 0 12px; color:#3A4766;">Your care team and pharmacy have sent you updates.</p><button type="button" class="btn btn-outline btn-sm" data-go="messages">Open inbox</button></div>
+        <div class="pt-card pt-card--sun"><h3><img src="assets/doodles/pill.svg" alt="">Medications</h3><div class="pt-big">1 refill ready</div><p style="margin:0 0 12px;">Lisinopril is ready for pickup at Tread Pharmacy.</p><button type="button" class="btn btn-white btn-sm" data-go="medications">See medications</button></div>
+        <div class="pt-card"><h3><img src="assets/doodles/shield.svg" alt="">Balance due</h3><div class="pt-big">$142.00</div><p style="margin:0 0 12px; color:#3A4766;">Cardiology consultation from Jul 2, 2026.</p><a href="myportal-billing.html" class="btn btn-primary btn-sm">Pay now</a></div>
+        <div class="pt-card span-2"><h3><img src="assets/doodles/sun.svg" alt="">Health reminders</h3>
+          <div class="pt-row"><img src="assets/doodles/shield.svg" alt="" style="width:36px;"><div class="grow"><strong>Flu shot</strong><small>Due this season. Available at Tread Pharmacy with no appointment.</small></div><a href="services-pharmacy.html" class="btn btn-outline btn-sm">Learn more</a></div>
+          <div class="pt-row"><img src="assets/doodles/heart-pulse.svg" alt="" style="width:36px;"><div class="grow"><strong>Cardiology follow-up</strong><small>Video visit with Dr. Whitfield on Dec 14.</small></div><button type="button" class="btn btn-outline btn-sm" data-go="appointments">Details</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-panel" id="panel-appointments" data-panel="appointments">
+      <div class="pt-head"><h2>Appointments</h2><p>Upcoming and past visits.</p></div>
+      <div class="pt-card" style="margin-bottom:18px;"><h3>Upcoming</h3>
+        <div class="pt-row"><img class="avatar" src="assets/img/doctor-chen.jpg" alt=""><div class="grow"><strong>Annual wellness visit</strong><small>Tue, Dec 1 at 10:30 AM with Dr. Maria Chen, MD, Tread Medical Center</small></div><button type="button" class="btn btn-outline btn-sm" data-toast="appt">Reschedule</button><button type="button" class="btn btn-outline btn-sm" data-toast="appt">Cancel</button></div>
+        <div class="pt-row"><img class="avatar" src="assets/img/doctor-whitfield.jpg" alt=""><div class="grow"><strong>Cardiology follow-up (video)</strong><small>Mon, Dec 14 at 2:00 PM with Dr. James Whitfield, MD</small></div><button type="button" class="btn btn-outline btn-sm" data-toast="appt">Reschedule</button><button type="button" class="btn btn-outline btn-sm" data-toast="appt">Cancel</button></div>
+        <div class="pt-toast" id="toast-appt">This is a demo, so no real changes are made. In a live portal this would open scheduling.</div>
+        <div style="margin-top:16px;"><a href="appointments.html" class="btn btn-primary">Schedule a new visit</a></div>
+      </div>
+      <div class="pt-card"><h3>Past visits</h3>
+        <div class="pt-row"><img class="avatar" src="assets/img/doctor-chen.jpg" alt=""><div class="grow"><strong>Annual wellness visit</strong><small>Aug 14, 2026 with Dr. Maria Chen, MD</small></div></div>
+        <div class="pt-row"><img class="avatar" src="assets/img/doctor-whitfield.jpg" alt=""><div class="grow"><strong>Cardiology consultation</strong><small>Jul 2, 2026 with Dr. James Whitfield, MD</small></div></div>
+      </div>
+    </section>
+
+    <section class="pt-panel" id="panel-results" data-panel="results">
+      <div class="pt-head"><h2>Test results</h2><p>Select a result to see a plain-language summary.</p></div>
+      <div class="pt-card">
+        <table class="pt-table">
+          <thead><tr><th>Date</th><th>Test</th><th>Ordered by</th><th>Status</th><th></th></tr></thead>
+          <tbody>
+            <tr><td>Nov 17, 2026</td><td><strong>Cholesterol panel</strong></td><td>Dr. Chen</td><td><span class="status-pill status-new">New</span></td><td><button type="button" class="btn btn-outline btn-sm" data-result="r1">View</button></td></tr>
+            <tr><td>Jul 2, 2026</td><td><strong>Echocardiogram (heart ultrasound)</strong></td><td>Dr. Whitfield</td><td><span class="status-pill status-ok">Reviewed</span></td><td><button type="button" class="btn btn-outline btn-sm" data-result="r2">View</button></td></tr>
+            <tr><td>May 20, 2026</td><td><strong>Routine bloodwork</strong></td><td>Dr. Chen</td><td><span class="status-pill status-ok">Normal</span></td><td><button type="button" class="btn btn-outline btn-sm" data-result="r3">View</button></td></tr>
+          </tbody>
+        </table>
+        <div class="sc-why" id="result-detail" style="margin-top:18px; display:none;"></div>
+      </div>
+    </section>
+
+    <section class="pt-panel" id="panel-messages" data-panel="messages">
+      <div class="pt-head"><h2>Messages</h2><p>Secure messages with your care team.</p></div>
+      <div class="pt-card" style="margin-bottom:18px;">
+        <div class="pt-row pt-msg is-unread"><div class="grow"><strong>Dr. Chen&rsquo;s team: Your lab results are ready</strong><small>Nov 17. Your cholesterol panel is available in Test results.</small></div></div>
+        <div class="pt-row pt-msg is-unread"><div class="grow"><strong>Tread Pharmacy: Refill ready for pickup</strong><small>Nov 16. Lisinopril is ready at the Tread Medical Center pharmacy.</small></div></div>
+        <div class="pt-row pt-msg"><div class="grow"><strong>Billing: New statement available</strong><small>Nov 10. You can review and pay in the Billing section.</small></div></div>
+      </div>
+      <div class="pt-card"><h3>New message</h3>
+        <label for="msg-to" style="font-weight:700;">To</label>
+        <select id="msg-to" class="pt-textarea" style="min-height:0; padding:12px 14px;"><option>Dr. Chen&rsquo;s team</option><option>Dr. Whitfield&rsquo;s team</option><option>Billing</option><option>Tread Pharmacy</option></select>
+        <label for="msg-body" style="font-weight:700;">Message</label>
+        <textarea id="msg-body" class="pt-textarea" placeholder="Write your message"></textarea>
+        <button type="button" class="btn btn-primary" id="msg-send">Send message</button>
+        <div class="pt-toast" id="toast-msg">Message sent. In this demo nothing is actually delivered.</div>
+      </div>
+    </section>
+
+    <section class="pt-panel" id="panel-medications" data-panel="medications">
+      <div class="pt-head"><h2>Medications</h2><p>Your current medications and refills.</p></div>
+      <div class="pt-card">
+        <div class="pt-row"><img src="assets/doodles/pill.svg" alt="" style="width:44px;"><div class="grow"><strong>Lisinopril 10 mg</strong><small>Once daily. 2 refills left. Ready for pickup.</small></div><button type="button" class="btn btn-outline btn-sm" data-refill>Request refill</button></div>
+        <div class="pt-row"><img src="assets/doodles/pill.svg" alt="" style="width:44px;"><div class="grow"><strong>Metformin 500 mg</strong><small>Twice daily with meals. 4 refills left.</small></div><button type="button" class="btn btn-outline btn-sm" data-refill>Request refill</button></div>
+        <div class="pt-row"><img src="assets/doodles/sun.svg" alt="" style="width:44px;"><div class="grow"><strong>Vitamin D 1000 IU</strong><small>Once daily. Over the counter.</small></div></div>
+        <div class="pt-toast" id="toast-refill">Refill requested. You will get a message when it is ready.</div>
+        <div style="margin-top:16px;"><a href="services-pharmacy.html" class="btn btn-primary">About Tread Pharmacy</a></div>
+      </div>
+    </section>
+
+    <section class="pt-panel" id="panel-team" data-panel="team">
+      <div class="pt-head"><h2>Your care team</h2><p>The people looking out for you.</p></div>
+      <div class="pt-card">
+        <div class="pt-row"><img class="avatar" src="assets/img/doctor-chen.jpg" alt=""><div class="grow"><strong>Dr. Maria Chen, MD</strong><small>Primary Care, Tread Medical Center</small></div><a href="doctor-profile-primary-care.html" class="btn btn-outline btn-sm">Profile</a><button type="button" class="btn btn-primary btn-sm" data-go="messages">Message</button></div>
+        <div class="pt-row"><img class="avatar" src="assets/img/doctor-whitfield.jpg" alt=""><div class="grow"><strong>Dr. James Whitfield, MD</strong><small>Cardiology, Tread Medical Center</small></div><a href="doctor-profile-cardiology.html" class="btn btn-outline btn-sm">Profile</a><button type="button" class="btn btn-primary btn-sm" data-go="messages">Message</button></div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-grid">
+
+    <div class="footer-col footer-brand">
+      <a href="index.html">
+        <img src="assets/tread-logo.png" alt="Tread Health Logo">
+      </a>
+      <p>Dedicated to supporting you at every stage of your health journey.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Tread Health on X">
+          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+        </a>
+        <a href="#" aria-label="Tread Health on LinkedIn">
+          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+      </div>
+    </div>
+
+        <div class="footer-col">
+      <h4>I Would Like To</h4>
+      <ul>
+        <li><a href="doctors.html">Find a Doctor</a></li>
+        <li><a href="locations.html">Search Locations</a></li>
+        <li><a href="services.html">Browse Services</a></li>
+        <li><a href="symptom-checker.html">Check My Symptoms</a></li>
+        <li><a href="appointments.html">Request an Appointment</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Patients &amp; Visitors</h4>
+      <ul>
+        <li><a href="myportal.html">MyPortal Sign In</a></li>
+        <li><a href="myportal-billing.html">Pay a Bill</a></li>
+        <li><a href="accepted-insurance.html">Accepted Insurance</a></li>
+        <li><a href="visitor-guidelines.html">Visitor Guidelines</a></li>
+        <li><a href="patient-stories.html">Patient Stories</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services-primary-care.html">Primary Care</a></li>
+        <li><a href="services-pediatrics.html">Pediatrics</a></li>
+        <li><a href="services-cardiology.html">Cardiology</a></li>
+        <li><a href="services-urgent-care.html">Urgent Care</a></li>
+        <li><a href="virtual-care.html">Virtual Care</a></li>
+        <li><a href="services-behavioral-health.html">Behavioral Health</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>About Tread Health</h4>
+      <ul>
+        <li><a href="our-story.html">Our Story</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="volunteering.html">Volunteering</a></li>
+        <li><a href="giving.html">Giving</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Tread Health System. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="coming-soon.html?page=Privacy+Policy">Privacy Policy</a>
+      <a href="coming-soon.html?page=Terms+of+Use">Terms of Use</a>
+      <a href="coming-soon.html?page=Notice+of+Privacy+Practices">Notice of Privacy Practices</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Toggle the mobile menu open/closed. No external libraries needed.
+  document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+    var menu = document.getElementById('mobile-menu');
+    var isOpen = menu.classList.toggle('is-open');
+    this.setAttribute('aria-expanded', isOpen);
+  });
+</script>
+
+<script>
+  (function () {
+    var tabs = document.querySelectorAll('#pt-nav button[data-tab]');
+    var panels = document.querySelectorAll('.pt-panel');
+    function show(name) {
+      var found = false;
+      panels.forEach(function (p) { var on = p.getAttribute('data-panel') === name; p.classList.toggle('is-active', on); if (on) found = true; });
+      if (!found) { name = 'overview'; document.getElementById('panel-overview').classList.add('is-active'); }
+      tabs.forEach(function (t) { t.classList.toggle('is-active', t.getAttribute('data-tab') === name); });
+      window.treadPageInfo.portalTab = name;
+      try { history.replaceState(null, '', '#' + name); } catch (e) {}
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    tabs.forEach(function (t) { t.addEventListener('click', function () { show(t.getAttribute('data-tab')); }); });
+    document.querySelectorAll('[data-go]').forEach(function (b) { b.addEventListener('click', function () { show(b.getAttribute('data-go')); }); });
+    function toast(id) { var el = document.getElementById(id); el.classList.add('is-visible'); setTimeout(function () { el.classList.remove('is-visible'); }, 4000); }
+    document.querySelectorAll('[data-toast="appt"]').forEach(function (b) { b.addEventListener('click', function () { toast('toast-appt'); }); });
+    document.querySelectorAll('[data-refill]').forEach(function (b) { b.addEventListener('click', function () { b.textContent = 'Refill requested'; b.disabled = true; b.style.opacity = 0.6; toast('toast-refill'); }); });
+    document.getElementById('msg-send').addEventListener('click', function () { document.getElementById('msg-body').value = ''; toast('toast-msg'); window.treadPageInfo.messageSent = true; });
+    var RESULTS = {
+      r1: '<strong>Cholesterol panel (Nov 17).</strong> Your total cholesterol is a little above your goal. Dr. Chen added a note: &ldquo;Nothing urgent. Let&rsquo;s talk about easy next steps at your visit on Dec 1.&rdquo;',
+      r2: '<strong>Echocardiogram (Jul 2).</strong> Your heart ultrasound looks reassuring. Dr. Whitfield reviewed it with you at your cardiology consultation.',
+      r3: '<strong>Routine bloodwork (May 20).</strong> All results were in the normal range.'
+    };
+    document.querySelectorAll('[data-result]').forEach(function (b) { b.addEventListener('click', function () {
+      var d = document.getElementById('result-detail'); d.innerHTML = RESULTS[b.getAttribute('data-result')]; d.style.display = 'block';
+      window.treadPageInfo.resultViewed = b.getAttribute('data-result'); }); });
+    var start = (location.hash || '').replace('#', '');
+    if (start) show(start);
+  })();
+</script>
+
+<!-- Playful motion (scroll pop-ins, count-ups). Safe to remove. -->
+<script src="motion.js" defer></script>
+
+<!-- Page info for Qualtrics targeting (JavaScript variable: window.treadPageInfo) -->
+<script>window.treadPageInfo = {"site": "tread-health", "page": "myportal-home", "section": "myportal", "flow": "portal", "portalTab": "overview", "signedIn": true, "balanceDue": 142, "unreadMessages": 2};</script>
+<!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
+
+<script type='text/javascript'>
+
+(function(){var g=function(g){
+
+this.go=function(){var a=document.createElement("script");a.type="text/javascript";a.src=g;document.body&&document.body.appendChild(a)};
+
+this.start=function(){var t=this;"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",function(){t.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){t.go()}):t.go()};};
+
+try{(new g("https://zn0jvaixpvu5igezz-qdemo.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_0JvaiXpVU5igeZz")).start()}catch(i){}})();
+
+</script><div id='ZN_0JvaiXpVU5igeZz'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+
+<!--END WEBSITE FEEDBACK SNIPPET-->
+</body>
+</html>

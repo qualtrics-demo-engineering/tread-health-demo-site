@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imaging Services | Tread Health</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body id="page-services-imaging" data-page="services-imaging" data-section="services">
+
+<!-- Demo Disclaimer Banner (NOT a real healthcare provider) -->
+<div class="demo-banner">
+  ⚠️ This is a fictional demo website built for a product demonstration. Tread Health is not a real healthcare provider. For medical emergencies, call 911.
+</div>
+
+<!-- Top Utility Bar -->
+<div class="utility-bar">
+  <div class="utility-bar__emergency">
+    <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+    <span>Emergency? Call 911</span>
+  </div>
+  <div class="utility-bar__links">
+    <a href="careers.html">Careers</a>
+    <a href="giving.html">Giving</a>
+    <a href="myportal.html">Patient Portal</a>
+    <a href="myportal-billing.html">Pay a Bill</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container-lg header-inner">
+
+    <a href="index.html" class="logo">
+      <img src="assets/tread-logo.png" alt="Tread Health Logo">
+    </a>
+
+    <nav class="main-nav">
+      <a href="doctors.html" class="nav-link">Find a Doctor</a>
+      <a href="locations.html" class="nav-link">Locations</a>
+
+      <div class="dropdown">
+        <a href="services.html" class="dropdown-toggle">
+          Services
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </a>
+        <div class="dropdown-menu">
+          <div>
+            <h4>Featured Specialties</h4>
+            <ul>
+              <li><a href="services-primary-care.html">Primary Care</a></li>
+              <li><a href="services-pediatrics.html">Pediatrics</a></li>
+              <li><a href="services-cardiology.html">Cardiology</a></li>
+              <li><a href="services-orthopedics.html">Orthopedics</a></li>
+              <li><a href="services-oncology.html">Oncology</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>More Services</h4>
+            <ul>
+              <li><a href="services-urgent-care.html">Urgent Care</a></li>
+              <li><a href="virtual-care.html">Virtual Care</a></li>
+              <li><a href="services-behavioral-health.html">Behavioral Health</a></li>
+              <li><a href="services-imaging.html">Imaging Services</a></li>
+              <li><a href="services-pharmacy.html">Pharmacy</a></li>
+              <li><a href="services.html" class="link-arrow">View All Services &rarr;</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="patients-visitors.html" class="dropdown-toggle">
+          Patients &amp; Visitors
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </a>
+        <div class="dropdown-menu">
+          <div>
+            <h4>MyPortal</h4>
+            <ul>
+              <li><a href="myportal.html">Sign In / Register</a></li>
+              <li><a href="myportal-billing.html">Pay a Bill</a></li>
+              <li><a href="symptom-checker.html">Symptom Checker</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Visiting</h4>
+            <ul>
+              <li><a href="accepted-insurance.html">Accepted Insurance</a></li>
+              <li><a href="visitor-guidelines.html">Visitor Guidelines</a></li>
+              <li><a href="locations.html" class="link-arrow">Find a Location &rarr;</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header-actions">
+      <a href="appointments.html" class="btn btn-primary">Schedule Appointment</a>
+    </div>
+
+    <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="doctors.html">Find a Doctor</a>
+    <a href="locations.html">Locations</a>
+
+    <p class="section-label">Services</p>
+    <a href="services-primary-care.html" class="sub-link">Primary Care</a>
+    <a href="services-pediatrics.html" class="sub-link">Pediatrics</a>
+    <a href="services-cardiology.html" class="sub-link">Cardiology</a>
+    <a href="services-orthopedics.html" class="sub-link">Orthopedics</a>
+    <a href="services-oncology.html" class="sub-link">Oncology</a>
+    <a href="services-urgent-care.html" class="sub-link">Urgent Care</a>
+    <a href="virtual-care.html" class="sub-link">Virtual Care</a>
+    <a href="services-behavioral-health.html" class="sub-link">Behavioral Health</a>
+    <a href="services-imaging.html" class="sub-link">Imaging Services</a>
+    <a href="services-pharmacy.html" class="sub-link">Pharmacy</a>
+    <a href="services.html" class="sub-link" style="color:var(--blue);">View All Services &rarr;</a>
+
+    <p class="section-label">Patients &amp; Visitors</p>
+    <a href="myportal.html" class="sub-link">MyPortal Sign In</a>
+    <a href="myportal-billing.html" class="sub-link">Pay a Bill</a>
+    <a href="symptom-checker.html" class="sub-link">Symptom Checker</a>
+    <a href="accepted-insurance.html" class="sub-link">Accepted Insurance</a>
+    <a href="visitor-guidelines.html" class="sub-link">Visitor Guidelines</a>
+
+    <a href="appointments.html" class="btn btn-primary">Schedule Appointment</a>
+  </div>
+</header>
+
+<nav class="breadcrumb"><div class="container"><a href="index.html">Home</a> / <a href="services.html">Services</a> / Imaging Services</div></nav>
+
+<section class="svc-hero">
+  <div class="svc-hero__grid">
+    <div class="svc-hero__copy">
+      <h1>Imaging Services</h1>
+      <p class="lead">MRI, CT, X-ray, ultrasound, and lab services with clear explanations, comfortable rooms, and results shared with your care team.</p>
+      <div class="fact-chips"><span><img src="assets/doodles/xray.svg" alt="">Same-day X-ray</span><span><img src="assets/doodles/clipboard.svg" alt="">Results in MyPortal</span><span><img src="assets/doodles/thermometer.svg" alt="">Labs & blood draws on site</span></div>
+      <div class="svc-hero__actions">
+        <a href="appointments.html" class="btn btn-primary btn-lg">Schedule an Appointment</a>
+        <a href="appointments.html" class="btn btn-outline btn-lg">Schedule Imaging</a>
+      </div>
+    </div>
+    <div class="svc-hero__art">
+      <img class="doodle bob" src="assets/doodles/xray.svg" alt="" aria-hidden="true" style="width:72px; top:-12px; right:2%; --r:8deg;">
+      <img class="doodle bob-slow" src="assets/doodles/magnifier.svg" alt="" aria-hidden="true" style="width:60px; bottom:20%; left:-3%; --r:-8deg;">
+      <img class="doodle bob-slow" src="assets/doodles/sparkle.svg" alt="" aria-hidden="true" style="width:36px; top:36%; right:-3%;">
+      <div class="photo-frame"><img src="assets/img/care-imaging.jpg" alt="Technologists review brain and chest scans at a workstation, with an MRI suite and lab visible through a glass window"></div>
+      <span class="callout" style="left:6%; bottom:-4px; rotate:-3deg;">a clear picture</span>
+    </div>
+  </div>
+</section>
+
+<div class="svc-layout">
+  <div class="svc-main">
+    <section>
+      <h2>What we treat</h2>
+      <p class="intro">Our imaging and lab teams help your doctor see what is going on, and they take the time to tell you what to expect.</p>
+      <div class="treat-grid">
+        <div class="treat-card treat-card--blue"><img src="assets/doodles/xray.svg" alt=""><div><h3>MRI</h3><p>Detailed images of soft tissue, joints, and the brain, in a calm suite.</p></div></div>
+        <div class="treat-card treat-card--purple"><img src="assets/doodles/xray.svg" alt=""><div><h3>CT scans</h3><p>Fast, detailed images for many conditions.</p></div></div>
+        <div class="treat-card treat-card--mint"><img src="assets/doodles/xray.svg" alt=""><div><h3>X-ray</h3><p>Walk-in X-ray at select locations with an order from your provider.</p></div></div>
+        <div class="treat-card treat-card--sun"><img src="assets/doodles/magnifier.svg" alt=""><div><h3>Ultrasound</h3><p>Gentle, radiation-free imaging for many needs.</p></div></div>
+        <div class="treat-card treat-card--pink"><img src="assets/doodles/ribbon.svg" alt=""><div><h3>Mammography</h3><p>Screening and diagnostic mammograms in a comfortable setting.</p></div></div>
+        <div class="treat-card treat-card--coral"><img src="assets/doodles/clipboard.svg" alt=""><div><h3>Lab tests & blood draws</h3><p>Quick, friendly blood draws with results in MyPortal.</p></div></div>
+      </div>
+      
+    </section>
+
+    <section>
+      <h2>What to expect</h2>
+      <p class="intro">If you feel nervous about a scan, tell us. We can walk you through each step and offer comforts like blankets and music.</p>
+      <div class="steps">
+        <div class="step"><h3>Get an order</h3><p>Your provider places the order, or we will help you get one.</p></div>
+        <div class="step"><h3>Schedule</h3><p>Book online, in MyPortal, or by phone. X-rays are often available as walk-ins.</p></div>
+        <div class="step"><h3>Prep and arrive</h3><p>We send prep instructions ahead of time and guide you at check-in.</p></div>
+        <div class="step"><h3>See your results</h3><p>Results go to your provider and appear in MyPortal. Your provider will talk them through with you.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Who you will meet</h2>
+      <p class="intro">Real people who will know your name.</p>
+      <div class="role-grid"><div class="role-card"><img src="assets/doodles/xray.svg" alt=""><div><strong>Radiologists</strong><span>Doctors who read and interpret your images.</span></div></div><div class="role-card"><img src="assets/doodles/clipboard.svg" alt=""><div><strong>Imaging technologists</strong><span>The experts who guide you through each scan.</span></div></div><div class="role-card"><img src="assets/doodles/thermometer.svg" alt=""><div><strong>Phlebotomists</strong><span>Gentle, practiced blood draws.</span></div></div></div>
+    </section>
+
+    <section>
+      <div class="quote-card">
+        <img class="doodle " src="assets/doodles/speech.svg" alt="" aria-hidden="true" style="">
+        <blockquote>&ldquo;The tech explained every step and gave me a blanket and headphones. I was in and out faster than I expected.&rdquo;</blockquote>
+        <cite>Elena V., Imaging patient</cite>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Common questions</h2>
+      <div style="margin-top:18px;">
+        <details><summary>Do I need an appointment for an X-ray?</summary><div class="answer"><p>Walk-in X-rays are available at select locations with an order from your provider. For other imaging, we recommend scheduling ahead.</p></div></details>
+        <details><summary>Is an MRI loud?</summary><div class="answer"><p>MRI machines make knocking and buzzing sounds. We provide headphones or earplugs and music, and you can talk to the technologist at any time.</p></div></details>
+        <details><summary>How soon will I get my results?</summary><div class="answer"><p>Timing depends on the test. Many results appear in MyPortal within a few days, and your provider will follow up.</p></div></details>
+        <details><summary>How do I prepare?</summary><div class="answer"><p>We send instructions for your specific test. In general, wear comfortable clothes without metal, and bring your medication list.</p></div></details>
+      </div>
+    </section>
+
+    <div id="qsi-survey-imaging" class="tread-embedded-feedback"></div>
+  </div>
+
+  <aside class="svc-side">
+    <div class="info-sidebar">
+      <h3>Ready to get started?</h3>
+      <a href="appointments.html" class="btn btn-primary">Schedule an Appointment</a>
+      <a href="appointments.html" class="btn btn-outline">Schedule Imaging</a>
+      <div class="info-sidebar-list"><a href="myportal.html">MyPortal results &rarr;</a><a href="locations.html">Find a Location &rarr;</a></div>
+      <h4>Where to find us</h4><div class="where-list"><a class="where-card" href="locations.html"><img src="assets/img/tread-medical-center.jpg" alt="Tread Medical Center" loading="lazy"><div><strong>Tread Medical Center</strong><span>Our hospital campus, with emergency care open 24/7</span></div></a><a class="where-card" href="locations.html"><img src="assets/img/tread-north.jpg" alt="Tread North" loading="lazy"><div><strong>Tread North</strong><span>Specialty care, imaging, and urgent care</span></div></a></div>
+    </div>
+  </aside>
+</div>
+
+<section class="cta-band">
+  <img class="doodle " src="assets/doodles/sparkle.svg" alt="" aria-hidden="true" style="width:54px; top:16%; left:8%;">
+  <img class="doodle " src="assets/doodles/balloons.svg" alt="" aria-hidden="true" style="width:80px; bottom:12%; right:8%;">
+  <img class="doodle " src="assets/doodles/star.svg" alt="" aria-hidden="true" style="width:40px; top:20%; right:22%;">
+  <h2>Questions? We are happy to help.</h2>
+  <p>Call us at (555) 010-2000 or send a message in MyPortal.</p>
+  <a href="contact.html" class="btn btn-white btn-lg">Contact us</a>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-grid">
+
+    <div class="footer-col footer-brand">
+      <a href="index.html">
+        <img src="assets/tread-logo.png" alt="Tread Health Logo">
+      </a>
+      <p>Dedicated to supporting you at every stage of your health journey.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Tread Health on X">
+          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+        </a>
+        <a href="#" aria-label="Tread Health on LinkedIn">
+          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+      </div>
+    </div>
+
+        <div class="footer-col">
+      <h4>I Would Like To</h4>
+      <ul>
+        <li><a href="doctors.html">Find a Doctor</a></li>
+        <li><a href="locations.html">Search Locations</a></li>
+        <li><a href="services.html">Browse Services</a></li>
+        <li><a href="symptom-checker.html">Check My Symptoms</a></li>
+        <li><a href="appointments.html">Request an Appointment</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Patients &amp; Visitors</h4>
+      <ul>
+        <li><a href="myportal.html">MyPortal Sign In</a></li>
+        <li><a href="myportal-billing.html">Pay a Bill</a></li>
+        <li><a href="accepted-insurance.html">Accepted Insurance</a></li>
+        <li><a href="visitor-guidelines.html">Visitor Guidelines</a></li>
+        <li><a href="patient-stories.html">Patient Stories</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services-primary-care.html">Primary Care</a></li>
+        <li><a href="services-pediatrics.html">Pediatrics</a></li>
+        <li><a href="services-cardiology.html">Cardiology</a></li>
+        <li><a href="services-urgent-care.html">Urgent Care</a></li>
+        <li><a href="virtual-care.html">Virtual Care</a></li>
+        <li><a href="services-behavioral-health.html">Behavioral Health</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>About Tread Health</h4>
+      <ul>
+        <li><a href="our-story.html">Our Story</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="volunteering.html">Volunteering</a></li>
+        <li><a href="giving.html">Giving</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Tread Health System. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="coming-soon.html?page=Privacy+Policy">Privacy Policy</a>
+      <a href="coming-soon.html?page=Terms+of+Use">Terms of Use</a>
+      <a href="coming-soon.html?page=Notice+of+Privacy+Practices">Notice of Privacy Practices</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Toggle the mobile menu open/closed. No external libraries needed.
+  document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+    var menu = document.getElementById('mobile-menu');
+    var isOpen = menu.classList.toggle('is-open');
+    this.setAttribute('aria-expanded', isOpen);
+  });
+</script>
+
+<!-- Playful motion (scroll pop-ins, count-ups). Safe to remove. -->
+<script src="motion.js" defer></script>
+
+<!-- Page info for Qualtrics targeting (JavaScript variable: window.treadPageInfo) -->
+<script>window.treadPageInfo = {"site": "tread-health", "page": "services-imaging", "section": "services", "specialty": "imaging"};</script>
+<!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
+
+<script type='text/javascript'>
+
+(function(){var g=function(g){
+
+this.go=function(){var a=document.createElement("script");a.type="text/javascript";a.src=g;document.body&&document.body.appendChild(a)};
+
+this.start=function(){var t=this;"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",function(){t.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){t.go()}):t.go()};};
+
+try{(new g("https://zn0jvaixpvu5igezz-qdemo.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_0JvaiXpVU5igeZz")).start()}catch(i){}})();
+
+</script><div id='ZN_0JvaiXpVU5igeZz'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+
+<!--END WEBSITE FEEDBACK SNIPPET-->
+</body>
+</html>
