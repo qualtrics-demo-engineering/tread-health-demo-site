@@ -5,8 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Virtual Care | Tread Health</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme.css">
 </head>
-<body id="page-virtual-care" data-page="virtual-care" data-section="services" data-specialty="virtual-care">
+<body id="page-virtual-care" data-page="virtual-care" data-section="services">
+
 <!-- Demo Disclaimer Banner (NOT a real healthcare provider) -->
 <div class="demo-banner">
   ⚠️ This is a fictional demo website built for a product demonstration. Tread Health is not a real healthcare provider. For medical emergencies, call 911.
@@ -27,7 +29,6 @@
   </div>
 </div>
 
-<!-- Main Navigation -->
 <header class="site-header">
   <div class="container-lg header-inner">
 
@@ -49,17 +50,20 @@
             <h4>Featured Specialties</h4>
             <ul>
               <li><a href="services-primary-care.html">Primary Care</a></li>
+              <li><a href="services-pediatrics.html">Pediatrics</a></li>
               <li><a href="services-cardiology.html">Cardiology</a></li>
-              <li><a href="coming-soon.html?page=Urgent+Care">Urgent Care</a></li>
-              <li><a href="virtual-care.html">Virtual Care</a></li>
+              <li><a href="services-orthopedics.html">Orthopedics</a></li>
+              <li><a href="services-oncology.html">Oncology</a></li>
             </ul>
           </div>
           <div>
             <h4>More Services</h4>
             <ul>
-              <li><a href="coming-soon.html?page=Behavioral+Health">Behavioral Health</a></li>
-              <li><a href="coming-soon.html?page=Imaging+Services">Imaging Services</a></li>
-              <li><a href="coming-soon.html?page=Pharmacy">Pharmacy</a></li>
+              <li><a href="services-urgent-care.html">Urgent Care</a></li>
+              <li><a href="virtual-care.html">Virtual Care</a></li>
+              <li><a href="services-behavioral-health.html">Behavioral Health</a></li>
+              <li><a href="services-imaging.html">Imaging Services</a></li>
+              <li><a href="services-pharmacy.html">Pharmacy</a></li>
               <li><a href="services.html" class="link-arrow">View All Services &rarr;</a></li>
             </ul>
           </div>
@@ -83,8 +87,8 @@
           <div>
             <h4>Visiting</h4>
             <ul>
-              <li><a href="coming-soon.html?page=Accepted+Insurance">Accepted Insurance</a></li>
-              <li><a href="coming-soon.html?page=Visitor+Guidelines">Visitor Guidelines</a></li>
+              <li><a href="accepted-insurance.html">Accepted Insurance</a></li>
+              <li><a href="visitor-guidelines.html">Visitor Guidelines</a></li>
               <li><a href="locations.html" class="link-arrow">Find a Location &rarr;</a></li>
             </ul>
           </div>
@@ -107,57 +111,124 @@
 
     <p class="section-label">Services</p>
     <a href="services-primary-care.html" class="sub-link">Primary Care</a>
+    <a href="services-pediatrics.html" class="sub-link">Pediatrics</a>
     <a href="services-cardiology.html" class="sub-link">Cardiology</a>
+    <a href="services-orthopedics.html" class="sub-link">Orthopedics</a>
+    <a href="services-oncology.html" class="sub-link">Oncology</a>
+    <a href="services-urgent-care.html" class="sub-link">Urgent Care</a>
+    <a href="virtual-care.html" class="sub-link">Virtual Care</a>
+    <a href="services-behavioral-health.html" class="sub-link">Behavioral Health</a>
+    <a href="services-imaging.html" class="sub-link">Imaging Services</a>
+    <a href="services-pharmacy.html" class="sub-link">Pharmacy</a>
     <a href="services.html" class="sub-link" style="color:var(--blue);">View All Services &rarr;</a>
 
     <p class="section-label">Patients &amp; Visitors</p>
     <a href="myportal.html" class="sub-link">MyPortal Sign In</a>
     <a href="myportal-billing.html" class="sub-link">Pay a Bill</a>
     <a href="symptom-checker.html" class="sub-link">Symptom Checker</a>
+    <a href="accepted-insurance.html" class="sub-link">Accepted Insurance</a>
+    <a href="visitor-guidelines.html" class="sub-link">Visitor Guidelines</a>
 
     <a href="appointments.html" class="btn btn-primary">Schedule Appointment</a>
   </div>
 </header>
 
-<nav class="breadcrumb"><div class="container"><a href="index.html">Home</a> / Virtual Care</div></nav>
+<nav class="breadcrumb"><div class="container"><a href="index.html">Home</a> / <a href="services.html">Services</a> / Virtual Care</div></nav>
 
-<section class="page-hero">
-  <h1>Virtual Care</h1>
-  <p>See a Tread Health provider from the comfort of your home — available for many everyday concerns, no waiting room required.</p>
+<section class="svc-hero svc-hero--lav">
+  <div class="svc-hero__grid">
+    <div class="svc-hero__copy">
+      <h1>Virtual Care</h1>
+      <p class="lead">See a Tread Health provider from the comfort of your home. Available for many everyday concerns, with no waiting room required.</p>
+      <div class="fact-chips"><span><img src="assets/doodles/video-call.svg" alt="">Secure video visits</span><span><img src="assets/doodles/pill.svg" alt="">Prescriptions to your pharmacy</span><span><img src="assets/doodles/calendar.svg" alt="">Evening times available</span></div>
+      <div class="svc-hero__actions">
+        <a href="appointments.html" class="btn btn-primary btn-lg">Start a Virtual Visit</a>
+        <a href="doctors.html" class="btn btn-outline btn-lg">Find a Doctor</a>
+      </div>
+    </div>
+    <div class="svc-hero__art">
+      <img class="doodle bob" src="assets/doodles/video-call.svg" alt="" aria-hidden="true" style="width:78px; top:-10px; right:2%; --r:8deg;">
+      <img class="doodle bob-slow" src="assets/doodles/cloud.svg" alt="" aria-hidden="true" style="width:90px; bottom:20%; left:-5%;">
+      <img class="doodle bob-slow" src="assets/doodles/sparkle.svg" alt="" aria-hidden="true" style="width:36px; top:36%; right:-3%;">
+      <div class="photo-frame"><img src="assets/img/care-virtual.jpg" alt="A Tread Health provider wearing a headset smiles while talking with a patient by video on a desktop computer"></div>
+      <span class="callout" style="left:6%; bottom:-4px; rotate:-3deg;">from your couch</span>
+    </div>
+  </div>
 </section>
 
-<div class="info-grid">
-  <div class="info-main">
-    <h2>What Virtual Care Is Good For</h2>
-    <p>Virtual visits are a convenient option for care that doesn't require an in-person exam. Many patients use virtual care for quick, everyday concerns and follow-ups.</p>
-    <ul class="checklist">
-      <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Cold, flu, and allergy symptoms</li>
-      <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Follow-up visits and medication check-ins</li>
-      <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Skin concerns and rashes</li>
-      <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> General health questions</li>
-    </ul>
-    <h2>How It Works</h2>
-    <p>Schedule a virtual visit through MyPortal, connect with your provider by secure video at your appointment time, and get a treatment plan (and prescriptions, if needed) sent straight to your pharmacy.</p>
-    <p style="font-size:0.85rem; color:var(--gray-400);">Not sure if virtual care is right for you? Try our <a href="symptom-checker.html" style="color:var(--blue); font-weight:600;">Symptom Checker</a> first.</p>
-
-    <div id="qsi-survey-virtual-care" class="survey-embed-slot" style="margin-top:32px;">
-      Qualtrics survey embed target — did this page answer your questions?
-      <div class="thumbs">
-        <button type="button" class="thumb-up" data-feedback="up" aria-label="Yes, this helped"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-7"></path></svg></button>
-        <button type="button" class="thumb-down" data-feedback="down" aria-label="No, I still have questions"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="transform: scaleY(-1);"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-7"></path></svg></button>
+<div class="svc-layout">
+  <div class="svc-main">
+    <section>
+      <h2>What we treat</h2>
+      <p class="intro">Virtual visits are a convenient option for care that does not require an in-person exam. Many patients use virtual care for quick, everyday concerns and follow-ups.</p>
+      <div class="treat-grid">
+        <div class="treat-card treat-card--blue"><img src="assets/doodles/thermometer.svg" alt=""><div><h3>Cold, flu & allergy symptoms</h3><p>Talk through symptoms and get a plan without leaving home.</p></div></div>
+        <div class="treat-card treat-card--purple"><img src="assets/doodles/calendar.svg" alt=""><div><h3>Follow-ups & medication check-ins</h3><p>Quick conversations to keep your care on track.</p></div></div>
+        <div class="treat-card treat-card--mint"><img src="assets/doodles/magnifier.svg" alt=""><div><h3>Skin concerns & rashes</h3><p>Show your provider by video or photo.</p></div></div>
+        <div class="treat-card treat-card--sun"><img src="assets/doodles/speech.svg" alt=""><div><h3>General health questions</h3><p>Not sure who to ask? Start here.</p></div></div>
+        <div class="treat-card treat-card--pink"><img src="assets/doodles/flower.svg" alt=""><div><h3>Counseling & therapy visits</h3><p>Talk with a behavioral health clinician from a comfortable space.</p></div></div>
+        <div class="treat-card treat-card--coral"><img src="assets/doodles/pill.svg" alt=""><div><h3>Prescription questions & refills</h3><p>Get answers and keep your medications on schedule.</p></div></div>
       </div>
-      <code>#qsi-survey-virtual-care</code>
-    </div>
+      
+    </section>
+
+    <section>
+      <h2>What to expect</h2>
+      <p class="intro">Not sure if virtual care is the right fit? Try our <a href="symptom-checker.html" style="color:var(--blue); font-weight:700;">Symptom Checker</a> first.</p>
+      <div class="steps">
+        <div class="step"><h3>Schedule your visit</h3><p>Book through MyPortal or by phone. Many times are available, including evenings.</p></div>
+        <div class="step"><h3>Get set up</h3><p>Use any device with a camera and internet. We will send a link and a quick tech check.</p></div>
+        <div class="step"><h3>Talk with your provider</h3><p>Connect by secure video at your appointment time and share what is going on.</p></div>
+        <div class="step"><h3>Plan and prescriptions</h3><p>Your treatment plan goes to MyPortal and any prescriptions go straight to your pharmacy.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Who you will meet</h2>
+      <p class="intro">Real people who will know your name.</p>
+      <div class="role-grid"><div class="role-card"><img src="assets/doodles/video-call.svg" alt=""><div><strong>Virtual care providers</strong><span>Doctors and advanced practice providers.</span></div></div><div class="role-card"><img src="assets/doodles/clipboard.svg" alt=""><div><strong>Virtual care nurses</strong><span>Help you get set up and ready.</span></div></div><div class="role-card"><img src="assets/doodles/pill.svg" alt=""><div><strong>Pharmacists</strong><span>Fill and deliver what your provider prescribes.</span></div></div></div>
+    </section>
+
+    <section>
+      <div class="quote-card">
+        <img class="doodle " src="assets/doodles/speech.svg" alt="" aria-hidden="true" style="">
+        <blockquote>&ldquo;I had a video visit on my lunch break, and the prescription was waiting at my pharmacy by the time I got there.&rdquo;</blockquote>
+        <cite>Marcus T., Virtual care patient</cite>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Common questions</h2>
+      <div style="margin-top:18px;">
+        <details><summary>What do I need for a virtual visit?</summary><div class="answer"><p>A phone, tablet, or computer with a camera and microphone, and a private spot with a good internet connection.</p></div></details>
+        <details><summary>Is a virtual visit private?</summary><div class="answer"><p>Yes. Visits use a secure, encrypted connection, and your provider keeps your information confidential like any other visit.</p></div></details>
+        <details><summary>What if I need to be seen in person?</summary><div class="answer"><p>If your provider thinks you need an exam or tests, they will help you book an in-person visit right away.</p></div></details>
+        <details><summary>Can I get a prescription?</summary><div class="answer"><p>If your provider decides it is appropriate, yes. It will be sent to the pharmacy you choose.</p></div></details>
+      </div>
+    </section>
+
+    <div id="qsi-survey-virtual-care" class="tread-embedded-feedback"></div>
   </div>
-  <div class="info-sidebar">
-    <h3>Ready for a virtual visit?</h3>
-    <a href="appointments.html" class="btn btn-primary">Start a Virtual Visit</a>
-    <div class="info-sidebar-list">
-      <a href="myportal.html">Go to MyPortal &rarr;</a>
-      <a href="doctors.html">Find a Doctor &rarr;</a>
+
+  <aside class="svc-side">
+    <div class="info-sidebar">
+      <h3>Ready to get started?</h3>
+      <a href="appointments.html" class="btn btn-primary">Start a Virtual Visit</a>
+      <a href="doctors.html" class="btn btn-outline">Find a Doctor</a>
+      <div class="info-sidebar-list"><a href="myportal.html">Go to MyPortal &rarr;</a><a href="symptom-checker.html">Try the Symptom Checker &rarr;</a></div>
+      
     </div>
-  </div>
+  </aside>
 </div>
+
+<section class="cta-band">
+  <img class="doodle " src="assets/doodles/sparkle.svg" alt="" aria-hidden="true" style="width:54px; top:16%; left:8%;">
+  <img class="doodle " src="assets/doodles/balloons.svg" alt="" aria-hidden="true" style="width:80px; bottom:12%; right:8%;">
+  <img class="doodle " src="assets/doodles/star.svg" alt="" aria-hidden="true" style="width:40px; top:20%; right:22%;">
+  <h2>Questions? We are happy to help.</h2>
+  <p>Call us at (555) 010-2000 or send a message in MyPortal.</p>
+  <a href="contact.html" class="btn btn-white btn-lg">Contact us</a>
+</section>
 
 <!-- Footer -->
 <footer class="site-footer">
@@ -178,7 +249,7 @@
       </div>
     </div>
 
-    <div class="footer-col">
+        <div class="footer-col">
       <h4>I Would Like To</h4>
       <ul>
         <li><a href="doctors.html">Find a Doctor</a></li>
@@ -194,8 +265,9 @@
       <ul>
         <li><a href="myportal.html">MyPortal Sign In</a></li>
         <li><a href="myportal-billing.html">Pay a Bill</a></li>
-        <li><a href="coming-soon.html?page=Accepted+Insurance">Accepted Insurance</a></li>
-        <li><a href="coming-soon.html?page=Visitor+Guidelines">Visitor Guidelines</a></li>
+        <li><a href="accepted-insurance.html">Accepted Insurance</a></li>
+        <li><a href="visitor-guidelines.html">Visitor Guidelines</a></li>
+        <li><a href="patient-stories.html">Patient Stories</a></li>
       </ul>
     </div>
 
@@ -203,18 +275,21 @@
       <h4>Services</h4>
       <ul>
         <li><a href="services-primary-care.html">Primary Care</a></li>
+        <li><a href="services-pediatrics.html">Pediatrics</a></li>
         <li><a href="services-cardiology.html">Cardiology</a></li>
-        <li><a href="coming-soon.html?page=Urgent+Care">Urgent Care</a></li>
+        <li><a href="services-urgent-care.html">Urgent Care</a></li>
         <li><a href="virtual-care.html">Virtual Care</a></li>
+        <li><a href="services-behavioral-health.html">Behavioral Health</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
       <h4>About Tread Health</h4>
       <ul>
-        <li><a href="coming-soon.html?page=Our+Story">Our Story</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
         <li><a href="careers.html">Careers</a></li>
-        <li><a href="coming-soon.html?page=Volunteering">Volunteering</a></li>
+        <li><a href="volunteering.html">Volunteering</a></li>
+        <li><a href="giving.html">Giving</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
@@ -240,18 +315,25 @@
   });
 </script>
 
+<!-- Playful motion (scroll pop-ins, count-ups). Safe to remove. -->
+<script src="motion.js" defer></script>
 
 <!-- Page info for Qualtrics targeting (JavaScript variable: window.treadPageInfo) -->
-<script>window.treadPageInfo = {"site": "tread-health", "page": "virtual-care", "section": "services", "specialty": "virtual-care"};
-document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-feedback]');if(b){window.treadPageInfo.pageFeedback=b.getAttribute('data-feedback');}});</script>
+<script>window.treadPageInfo = {"site": "tread-health", "page": "virtual-care", "section": "services", "specialty": "virtual-care"};</script>
 <!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
-<script type='text/javascript'>
-(function(){var g=function(g){
-this.go=function(){var a=document.createElement("script");a.type="text/javascript";a.src=g;document.body&&document.body.appendChild(a)};
-this.start=function(){var t=this;"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",function(){t.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){t.go()}):t.go()};};
-try{(new g("https://zn3jksy3gb60ib6m1-qhealth.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_3JKSy3gb60iB6m1")).start()}catch(i){}})();
-</script><div id='ZN_3JKSy3gb60iB6m1'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
-<!--END WEBSITE FEEDBACK SNIPPET-->
 
+<script type='text/javascript'>
+
+(function(){var g=function(g){
+
+this.go=function(){var a=document.createElement("script");a.type="text/javascript";a.src=g;document.body&&document.body.appendChild(a)};
+
+this.start=function(){var t=this;"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",function(){t.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){t.go()}):t.go()};};
+
+try{(new g("https://zn0jvaixpvu5igezz-qdemo.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_0JvaiXpVU5igeZz")).start()}catch(i){}})();
+
+</script><div id='ZN_0JvaiXpVU5igeZz'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+
+<!--END WEBSITE FEEDBACK SNIPPET-->
 </body>
 </html>

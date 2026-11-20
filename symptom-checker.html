@@ -5,8 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Symptom Checker | Tread Health</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme.css">
 </head>
-<body id="page-symptom-checker" data-page="symptom-checker" data-section="patients" data-specialty="symptom-checker">
+<body id="page-symptom-checker" data-page="symptom-checker" data-section="patients">
+
 <!-- Demo Disclaimer Banner (NOT a real healthcare provider) -->
 <div class="demo-banner">
   ⚠️ This is a fictional demo website built for a product demonstration. Tread Health is not a real healthcare provider. For medical emergencies, call 911.
@@ -27,7 +29,6 @@
   </div>
 </div>
 
-<!-- Main Navigation -->
 <header class="site-header">
   <div class="container-lg header-inner">
 
@@ -49,17 +50,20 @@
             <h4>Featured Specialties</h4>
             <ul>
               <li><a href="services-primary-care.html">Primary Care</a></li>
+              <li><a href="services-pediatrics.html">Pediatrics</a></li>
               <li><a href="services-cardiology.html">Cardiology</a></li>
-              <li><a href="coming-soon.html?page=Urgent+Care">Urgent Care</a></li>
-              <li><a href="virtual-care.html">Virtual Care</a></li>
+              <li><a href="services-orthopedics.html">Orthopedics</a></li>
+              <li><a href="services-oncology.html">Oncology</a></li>
             </ul>
           </div>
           <div>
             <h4>More Services</h4>
             <ul>
-              <li><a href="coming-soon.html?page=Behavioral+Health">Behavioral Health</a></li>
-              <li><a href="coming-soon.html?page=Imaging+Services">Imaging Services</a></li>
-              <li><a href="coming-soon.html?page=Pharmacy">Pharmacy</a></li>
+              <li><a href="services-urgent-care.html">Urgent Care</a></li>
+              <li><a href="virtual-care.html">Virtual Care</a></li>
+              <li><a href="services-behavioral-health.html">Behavioral Health</a></li>
+              <li><a href="services-imaging.html">Imaging Services</a></li>
+              <li><a href="services-pharmacy.html">Pharmacy</a></li>
               <li><a href="services.html" class="link-arrow">View All Services &rarr;</a></li>
             </ul>
           </div>
@@ -83,8 +87,8 @@
           <div>
             <h4>Visiting</h4>
             <ul>
-              <li><a href="coming-soon.html?page=Accepted+Insurance">Accepted Insurance</a></li>
-              <li><a href="coming-soon.html?page=Visitor+Guidelines">Visitor Guidelines</a></li>
+              <li><a href="accepted-insurance.html">Accepted Insurance</a></li>
+              <li><a href="visitor-guidelines.html">Visitor Guidelines</a></li>
               <li><a href="locations.html" class="link-arrow">Find a Location &rarr;</a></li>
             </ul>
           </div>
@@ -107,13 +111,23 @@
 
     <p class="section-label">Services</p>
     <a href="services-primary-care.html" class="sub-link">Primary Care</a>
+    <a href="services-pediatrics.html" class="sub-link">Pediatrics</a>
     <a href="services-cardiology.html" class="sub-link">Cardiology</a>
+    <a href="services-orthopedics.html" class="sub-link">Orthopedics</a>
+    <a href="services-oncology.html" class="sub-link">Oncology</a>
+    <a href="services-urgent-care.html" class="sub-link">Urgent Care</a>
+    <a href="virtual-care.html" class="sub-link">Virtual Care</a>
+    <a href="services-behavioral-health.html" class="sub-link">Behavioral Health</a>
+    <a href="services-imaging.html" class="sub-link">Imaging Services</a>
+    <a href="services-pharmacy.html" class="sub-link">Pharmacy</a>
     <a href="services.html" class="sub-link" style="color:var(--blue);">View All Services &rarr;</a>
 
     <p class="section-label">Patients &amp; Visitors</p>
     <a href="myportal.html" class="sub-link">MyPortal Sign In</a>
     <a href="myportal-billing.html" class="sub-link">Pay a Bill</a>
     <a href="symptom-checker.html" class="sub-link">Symptom Checker</a>
+    <a href="accepted-insurance.html" class="sub-link">Accepted Insurance</a>
+    <a href="visitor-guidelines.html" class="sub-link">Visitor Guidelines</a>
 
     <a href="appointments.html" class="btn btn-primary">Schedule Appointment</a>
   </div>
@@ -121,75 +135,73 @@
 
 <nav class="breadcrumb"><div class="container"><a href="index.html">Home</a> / Symptom Checker</div></nav>
 
-<section class="page-hero">
-  <h1>Symptom Checker</h1>
-  <p>Select what you're experiencing and we'll point you toward the right kind of care.</p>
+<section class="svc-hero svc-hero--sun" style="padding-bottom:84px;">
+  <img class="doodle bob" src="assets/doodles/thermometer.svg" alt="" aria-hidden="true" style="width:56px; top:26px; left:9%; --r:-10deg;">
+  <img class="doodle bob" src="assets/doodles/stethoscope.svg" alt="" aria-hidden="true" style="width:70px; top:40px; right:10%; --r:10deg;">
+  <img class="doodle bob-slow" src="assets/doodles/heart-pulse.svg" alt="" aria-hidden="true" style="width:64px; bottom:34px; left:18%; --r:6deg;">
+  <img class="doodle bob-slow" src="assets/doodles/bandage.svg" alt="" aria-hidden="true" style="width:56px; bottom:46px; right:17%; --r:-12deg;">
+  <img class="doodle bob-slow" src="assets/doodles/sparkle.svg" alt="" aria-hidden="true" style="width:34px; top:24px; right:30%;">
+  <div style="position:relative; z-index:1; max-width:760px; margin:0 auto; text-align:center; padding-top:8px;">
+    <h1>Symptom Checker</h1>
+    <p class="lead" style="margin:0 auto;">Meet Tread Buddy. Four quick questions, and we will point you to the right kind of care.</p>
+  </div>
 </section>
 
-<div style="max-width:700px; margin: 0 auto; padding: 0 20px;">
-  <div class="symptom-checklist" id="symptom-list">
-    <label class="symptom-chip"><input type="checkbox" value="virtual" data-weight="virtual"> Mild cold or cough</label>
-    <label class="symptom-chip"><input type="checkbox" value="virtual" data-weight="virtual"> Skin rash</label>
-    <label class="symptom-chip"><input type="checkbox" value="virtual" data-weight="virtual"> Seasonal allergies</label>
-    <label class="symptom-chip"><input type="checkbox" value="urgent" data-weight="urgent"> Fever over 101°F</label>
-    <label class="symptom-chip"><input type="checkbox" value="urgent" data-weight="urgent"> Sprain or minor injury</label>
-    <label class="symptom-chip"><input type="checkbox" value="urgent" data-weight="urgent"> Persistent vomiting</label>
-    <label class="symptom-chip"><input type="checkbox" value="emergency" data-weight="emergency"> Chest pain or pressure</label>
-    <label class="symptom-chip"><input type="checkbox" value="emergency" data-weight="emergency"> Difficulty breathing</label>
-  </div>
+<div class="sc-wrap">
+  <div class="sc-card" id="sc-card">
+    <div class="sc-trail" id="sc-trail" aria-hidden="true"><img src="assets/doodles/footprints.svg" alt=""><img src="assets/doodles/footprints.svg" alt=""><img src="assets/doodles/footprints.svg" alt=""><img src="assets/doodles/footprints.svg" alt=""></div>
 
-  <button class="btn btn-primary" style="width:100%; margin-top:28px;" onclick="checkSymptoms()">Check My Symptoms</button>
-
-  <div class="checker-result" id="checker-result"></div>
-
-  <div id="symptom-survey" class="survey-embed-slot" style="margin-top:32px;">
-      Qualtrics survey embed target — was this tool helpful?
-      <div class="thumbs">
-        <button type="button" class="thumb-up" data-feedback="up" aria-label="Yes, this helped"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-7"></path></svg></button>
-        <button type="button" class="thumb-down" data-feedback="down" aria-label="No, I still have questions"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="transform: scaleY(-1);"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-7"></path></svg></button>
+    <div class="sc-step is-active" data-step="0">
+      <h2 class="sc-q" tabindex="-1">Who are we checking in on?</h2>
+      <p class="sc-sub">Pick the one that fits best.</p>
+      <div class="sc-options sc-options--2" style="max-width:520px; margin:0 auto;">
+        <button type="button" class="sc-option" data-who="adult" aria-pressed="false"><img src="assets/doodles/face-happy.svg" alt="">Me<small>18 or older</small></button>
+        <button type="button" class="sc-option" data-who="child" aria-pressed="false"><img src="assets/doodles/teddy.svg" alt="">My child<small>Under 18</small></button>
       </div>
-      <code>#symptom-survey</code>
     </div>
 
-  <p class="checker-disclaimer">This tool is for demonstration purposes only and does not provide real medical advice or a diagnosis. If you are experiencing a real medical emergency, call 911 immediately.</p>
+    <div class="sc-step" data-step="1">
+      <h2 class="sc-q" tabindex="-1">What is bothering you most?</h2>
+      <p class="sc-sub">Choose the closest match. You can always start over.</p>
+      <div class="sc-options sc-options--4">
+          <button type="button" class="sc-option" data-area="fever" aria-pressed="false"><img src="assets/doodles/thermometer.svg" alt="">Fever, cold or flu</button>
+          <button type="button" class="sc-option" data-area="breathing" aria-pressed="false"><img src="assets/doodles/lungs.svg" alt="">Cough or trouble breathing</button>
+          <button type="button" class="sc-option" data-area="chest" aria-pressed="false"><img src="assets/doodles/heart-pulse.svg" alt="">Chest pain or pressure</button>
+          <button type="button" class="sc-option" data-area="tummy" aria-pressed="false"><img src="assets/doodles/stomach.svg" alt="">Tummy trouble</button>
+          <button type="button" class="sc-option" data-area="bones" aria-pressed="false"><img src="assets/doodles/bone.svg" alt="">Bone, joint or muscle pain, or an injury</button>
+          <button type="button" class="sc-option" data-area="skin" aria-pressed="false"><img src="assets/doodles/bandage.svg" alt="">Skin rash, cut or bite</button>
+          <button type="button" class="sc-option" data-area="mind" aria-pressed="false"><img src="assets/doodles/speech.svg" alt="">Feeling anxious, sad or overwhelmed</button>
+          <button type="button" class="sc-option" data-area="other" aria-pressed="false"><img src="assets/doodles/magnifier.svg" alt="">Something else</button>
+      </div>
+      <button type="button" class="sc-back" data-to="0">Back</button>
+    </div>
+
+    <div class="sc-step" data-step="2">
+      <h2 class="sc-q" tabindex="-1">How is it feeling?</h2>
+      <p class="sc-sub">There are no wrong answers.</p>
+      <div class="sc-options sc-options--3">
+        <button type="button" class="sc-option" data-sev="mild" aria-pressed="false"><img src="assets/doodles/face-happy.svg" alt="">Mostly okay<small>I can do my normal things</small></button>
+        <button type="button" class="sc-option" data-sev="moderate" aria-pressed="false"><img src="assets/doodles/face-meh.svg" alt="">Slowing me down<small>It is getting in the way</small></button>
+        <button type="button" class="sc-option" data-sev="severe" aria-pressed="false"><img src="assets/doodles/face-sad.svg" alt="">Really rough<small>Sudden, intense, or getting worse fast</small></button>
+      </div>
+      <p class="sc-label">And how long has it been going on?</p>
+      <div class="sc-chips">
+        <button type="button" class="loc-chip" data-dur="today" aria-pressed="false">Just today</button>
+        <button type="button" class="loc-chip" data-dur="days" aria-pressed="false">A few days</button>
+        <button type="button" class="loc-chip" data-dur="week" aria-pressed="false">A week or more</button>
+      </div>
+      <div class="sc-actions" style="margin-top:28px;"><button type="button" class="btn btn-primary btn-lg" id="sc-next" disabled style="opacity:.5;">See my next step</button></div>
+      <button type="button" class="sc-back" data-to="1">Back</button>
+    </div>
+
+    <div class="sc-step" data-step="3">
+      <div class="sc-result" id="sc-result" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <p class="sc-disclaimer">This tool is for demonstration purposes only and does not provide real medical advice or a diagnosis. If you are experiencing a real medical emergency, call 911 immediately.</p>
+  <div id="symptom-survey" class="tread-embedded-feedback"></div>
 </div>
-
-<script>
-  document.querySelectorAll('.symptom-chip').forEach(function (chip) {
-    chip.addEventListener('click', function () {
-      var input = chip.querySelector('input');
-      setTimeout(function () { chip.classList.toggle('is-selected', input.checked); }, 0);
-    });
-  });
-
-  function checkSymptoms() {
-    var checked = Array.prototype.slice.call(document.querySelectorAll('.symptom-chip input:checked'));
-    var resultEl = document.getElementById('checker-result');
-
-    if (checked.length === 0) {
-      resultEl.classList.add('is-visible');
-      resultEl.innerHTML = '<div class="result-card"><h3>Select a symptom above</h3><p>Choose at least one symptom to get a recommendation.</p></div>';
-      return;
-    }
-
-    var levels = checked.map(function (c) { return c.getAttribute('data-weight'); });
-    var level = 'virtual';
-    if (levels.indexOf('emergency') !== -1) level = 'emergency';
-    else if (levels.indexOf('urgent') !== -1) level = 'urgent';
-
-    var html = '';
-    if (level === 'emergency') {
-      html = '<div class="result-card level-emergency"><h3>Seek Emergency Care</h3><p>Based on what you selected, this could be serious. Please call 911 or go to your nearest emergency room right away.</p></div>';
-    } else if (level === 'urgent') {
-      html = '<div class="result-card level-urgent"><h3>Urgent Care Recommended</h3><p>These symptoms are best evaluated soon. Consider an urgent care visit today.</p><a href="doctors.html" class="btn btn-primary">Find Care Near You</a></div>';
-    } else {
-      html = '<div class="result-card level-virtual"><h3>Virtual Care May Be a Good Fit</h3><p>These symptoms can often be managed with a virtual visit from home.</p><a href="virtual-care.html" class="btn btn-primary">Start a Virtual Visit</a></div>';
-    }
-    window.treadPageInfo.symptomLevel = level;
-    resultEl.innerHTML = html;
-    resultEl.classList.add('is-visible');
-  }
-</script>
 
 <!-- Footer -->
 <footer class="site-footer">
@@ -210,7 +222,7 @@
       </div>
     </div>
 
-    <div class="footer-col">
+        <div class="footer-col">
       <h4>I Would Like To</h4>
       <ul>
         <li><a href="doctors.html">Find a Doctor</a></li>
@@ -226,8 +238,9 @@
       <ul>
         <li><a href="myportal.html">MyPortal Sign In</a></li>
         <li><a href="myportal-billing.html">Pay a Bill</a></li>
-        <li><a href="coming-soon.html?page=Accepted+Insurance">Accepted Insurance</a></li>
-        <li><a href="coming-soon.html?page=Visitor+Guidelines">Visitor Guidelines</a></li>
+        <li><a href="accepted-insurance.html">Accepted Insurance</a></li>
+        <li><a href="visitor-guidelines.html">Visitor Guidelines</a></li>
+        <li><a href="patient-stories.html">Patient Stories</a></li>
       </ul>
     </div>
 
@@ -235,18 +248,21 @@
       <h4>Services</h4>
       <ul>
         <li><a href="services-primary-care.html">Primary Care</a></li>
+        <li><a href="services-pediatrics.html">Pediatrics</a></li>
         <li><a href="services-cardiology.html">Cardiology</a></li>
-        <li><a href="coming-soon.html?page=Urgent+Care">Urgent Care</a></li>
+        <li><a href="services-urgent-care.html">Urgent Care</a></li>
         <li><a href="virtual-care.html">Virtual Care</a></li>
+        <li><a href="services-behavioral-health.html">Behavioral Health</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
       <h4>About Tread Health</h4>
       <ul>
-        <li><a href="coming-soon.html?page=Our+Story">Our Story</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
         <li><a href="careers.html">Careers</a></li>
-        <li><a href="coming-soon.html?page=Volunteering">Volunteering</a></li>
+        <li><a href="volunteering.html">Volunteering</a></li>
+        <li><a href="giving.html">Giving</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
@@ -272,18 +288,157 @@
   });
 </script>
 
+<script>
+  (function () {
+    var state = { who: null, area: null, sev: null, dur: null };
+    var steps = document.querySelectorAll('.sc-step');
+    var feet = document.querySelectorAll('#sc-trail img');
+    var nextBtn = document.getElementById('sc-next');
+    var resultEl = document.getElementById('sc-result');
+
+    var WHO = { adult: 'an adult', child: 'a child' };
+    var AREA = { fever: 'a fever, cold, or flu', breathing: 'a cough or trouble breathing', chest: 'chest pain or pressure',
+      tummy: 'tummy trouble', bones: 'bone, joint, or muscle pain or an injury', skin: 'a skin rash, cut, or bite',
+      mind: 'feeling anxious, sad, or overwhelmed', other: 'something else' };
+    var SEV = { mild: 'mostly okay', moderate: 'like it is slowing things down', severe: 'really rough' };
+    var DUR = { today: 'since today', days: 'for a few days', week: 'for a week or more' };
+    var TIPS = {
+      fever: ['Rest and drink plenty of fluids.', 'Dress lightly and keep the room comfortable.', 'Ask a pharmacist which fever reducers are right for you or your child.'],
+      breathing: ['Sit upright and take slow, steady breaths.', 'Stay away from smoke and strong smells.', 'If breathing gets harder, call 911.'],
+      chest: ['Stop what you are doing and sit down.', 'Do not drive yourself if you feel unwell.', 'Call 911 if the pain spreads to your arm, jaw, or back, or you feel faint or short of breath.'],
+      tummy: ['Sip small amounts of water or clear fluids often.', 'Try simple foods like toast, rice, or bananas when you feel ready.', 'Watch for dehydration: very dark urine, dizziness, or a dry mouth.'],
+      bones: ['Rest the area and avoid putting weight on it if it hurts.', 'Ice for 15 to 20 minutes at a time, and raise the area if you can.', 'Get care sooner if you cannot move it, it looks bent, or you feel numbness.'],
+      skin: ['Try not to scratch, and keep the area clean and dry.', 'Take a clear photo in good light. It helps your provider.', 'Get care quickly if a rash spreads fast, blisters, or comes with swelling of the face.'],
+      mind: ['Take a few slow breaths, and grab some water or fresh air if you can.', 'Tell someone you trust how you are feeling.', 'You can call or text 988 any time to talk with someone.'],
+      other: ['Write down when it started and what makes it better or worse.', 'Gather your medication list.', 'If symptoms get worse or you feel unsafe, call 911.']
+    };
+    var LABEL = { self: 'Care at home', virtual: 'Virtual visit', primary: 'Primary care', urgent: 'Urgent care', emergency: 'Emergency', crisis: 'Support now', behavioral: 'Behavioral health' };
+    var ICON = { self: 'sun', virtual: 'video-call', primary: 'stethoscope', urgent: 'clock', emergency: 'cross', crisis: 'heart', behavioral: 'speech' };
+
+    function level(s) {
+      var child = s.who === 'child', a = s.area, v = s.sev, d = s.dur;
+      if (a === 'mind') return v === 'severe' ? 'crisis' : 'behavioral';
+      if (a === 'chest') return v === 'mild' ? 'urgent' : 'emergency';
+      if (a === 'breathing') return v === 'severe' ? 'emergency' : (v === 'moderate' ? 'urgent' : 'primary');
+      if (v === 'severe') return (a === 'bones' || a === 'other') ? 'emergency' : 'urgent';
+      if (a === 'fever' || a === 'tummy') {
+        if (v === 'mild') return d === 'week' ? 'primary' : 'self';
+        return (child || d === 'week') ? 'primary' : 'virtual';
+      }
+      if (a === 'bones') return v === 'mild' ? (d === 'week' ? 'primary' : 'self') : 'urgent';
+      if (a === 'skin') return v === 'mild' ? (child ? 'primary' : 'virtual') : 'primary';
+      return v === 'mild' ? (child ? 'primary' : 'virtual') : 'primary';
+    }
+
+    function build(s) {
+      var lv = level(s), child = s.who === 'child', a = s.area;
+      var spec = child ? 'Pediatrics' : (a === 'bones' ? 'Orthopedics' : 'Primary Care');
+      var doc = child ? 'alvarez' : (a === 'bones' ? 'osei' : 'primary-care');
+      var out = { lv: lv, tips: TIPS[a].slice(), ctas: [] };
+      var who = child ? 'your child' : 'you';
+      if (lv === 'self') {
+        out.title = 'Rest and care at home may be all it takes';
+        out.why = 'This sounds like something that often improves with rest and simple comfort measures. If it lasts longer or gets worse, we are here.';
+        out.ctas = [['Ask a pharmacist', 'services-pharmacy.html', 1], ['Start a virtual visit', 'virtual-care.html', 0]];
+      } else if (lv === 'virtual') {
+        out.title = 'A virtual visit could be a great fit';
+        out.why = 'A provider can talk with ' + who + ' by video, look over what is going on, and send a plan and any prescriptions to your pharmacy.';
+        out.ctas = [['Start a virtual visit', 'appointments.html', 1], ['How virtual care works', 'virtual-care.html', 0]];
+      } else if (lv === 'primary') {
+        out.title = child ? 'A pediatrician is the right next stop' : (a === 'bones' ? 'An orthopedic visit can help you move better' : 'Let us get you in with a primary care doctor');
+        out.why = 'Because of how long this has been going on or how it feels, it is worth having a doctor take a closer look and make a plan.';
+        out.ctas = [['Book an appointment', 'appointments.html?doctor=' + doc, 1], ['Find a ' + spec.toLowerCase() + ' doctor', 'doctors.html?specialty=' + encodeURIComponent(spec), 0]];
+      } else if (lv === 'urgent') {
+        out.title = a === 'chest' ? 'Chest pain should be checked today' : 'Urgent care today is a good idea';
+        out.why = a === 'chest'
+          ? 'Even mild chest discomfort deserves a prompt look. If it gets worse, spreads, or comes with shortness of breath, sweating, or dizziness, call 911 right away.'
+          : 'This is best seen soon, and walk-in urgent care can help without an appointment, including X-ray and lab tests on site.';
+        out.ctas = [['See urgent care options', 'services-urgent-care.html', 1], ['Find a location', 'locations.html', 0]];
+        if (a === 'bones') out.ctas.push(['Orthopedics follow-up', 'services-orthopedics.html', 0]);
+        if (child && a === 'fever') out.tips.push('If your baby is under 3 months old and has a fever, call us or go to the emergency room right away.');
+      } else if (lv === 'emergency') {
+        out.title = 'This could be serious. Please call 911 or go to the emergency room.';
+        out.why = 'Based on what you told us, the safest choice is to be seen right away. Please do not wait, and do not drive yourself if you feel unwell.';
+        out.ctas = [['Call 911', 'tel:911', 1], ['Find our emergency department', 'locations.html', 0]];
+      } else if (lv === 'crisis') {
+        out.title = 'You are not alone. Help is available right now.';
+        out.why = 'Thank you for telling us how you feel. Please reach out to someone now. You can call or text 988 (the Suicide and Crisis Lifeline in the U.S.) any time, day or night.';
+        out.ctas = [['Call or text 988', 'tel:988', 1], ['Call 911 if you are in immediate danger', 'tel:911', 0], ['Behavioral health care', 'services-behavioral-health.html', 0]];
+      } else {
+        out.title = s.sev === 'moderate' ? 'Talking with a counselor can really help' : 'A little support can go a long way';
+        out.why = 'Feelings like these are common, and support works. Our behavioral health team can help ' + who + ' by video or in person, at a pace that feels right. If things ever feel unsafe, call or text 988.';
+        out.ctas = [['Book behavioral health', 'appointments.html', 1], ['Learn about support', 'services-behavioral-health.html', 0]];
+      }
+      return out;
+    }
+
+    function go(n) {
+      steps.forEach(function (st, i) { st.classList.toggle('is-active', i === n); });
+      feet.forEach(function (f, i) { f.classList.toggle('is-done', n === 3 ? true : i < n); });
+      var h = steps[n].querySelector('[tabindex="-1"]'); if (h) h.focus({ preventScroll: true });
+      var info = window.treadPageInfo; info.flow = 'symptom-checker'; info.flowStarted = true; info.flowStep = n + 1; info.flowCompleted = (n === 3);
+      document.getElementById('sc-card').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+    function mark(attr, val) {
+      document.querySelectorAll('[' + attr + ']').forEach(function (b) {
+        var on = b.getAttribute(attr) === val; b.classList.toggle('is-selected', on); b.classList.toggle('is-active', on); b.setAttribute('aria-pressed', on);
+      });
+    }
+    function refreshNext() {
+      var ready = !!(state.sev && state.dur); nextBtn.disabled = !ready; nextBtn.style.opacity = ready ? 1 : 0.5;
+    }
+
+    document.querySelectorAll('[data-who]').forEach(function (b) { b.addEventListener('click', function () {
+      state.who = b.getAttribute('data-who'); window.treadPageInfo.symptomWho = state.who; mark('data-who', state.who); setTimeout(function () { go(1); }, 200); }); });
+    document.querySelectorAll('[data-area]').forEach(function (b) { b.addEventListener('click', function () {
+      state.area = b.getAttribute('data-area'); window.treadPageInfo.symptomArea = state.area; mark('data-area', state.area); setTimeout(function () { go(2); }, 200); }); });
+    document.querySelectorAll('[data-sev]').forEach(function (b) { b.addEventListener('click', function () {
+      state.sev = b.getAttribute('data-sev'); window.treadPageInfo.symptomSeverity = state.sev; mark('data-sev', state.sev); refreshNext(); }); });
+    document.querySelectorAll('[data-dur]').forEach(function (b) { b.addEventListener('click', function () {
+      state.dur = b.getAttribute('data-dur'); window.treadPageInfo.symptomDuration = state.dur; mark('data-dur', state.dur); refreshNext(); }); });
+    document.querySelectorAll('.sc-back').forEach(function (b) { b.addEventListener('click', function () { go(parseInt(b.getAttribute('data-to'), 10)); }); });
+
+    nextBtn.addEventListener('click', function () {
+      var r = build(state);
+      window.treadPageInfo.symptomLevel = r.lv;
+      var summary = 'You told us: ' + WHO[state.who] + ' with ' + AREA[state.area] + ', feeling ' + SEV[state.sev] + ' ' + DUR[state.dur] + '.';
+      var tips = r.tips.map(function (t) { return '<li>' + t + '</li>'; }).join('');
+      var btns = r.ctas.map(function (c) { return '<a href="' + c[1] + '" class="btn ' + (c[2] ? 'btn-primary' : 'btn-outline') + ' btn-lg">' + c[0] + '</a>'; }).join('');
+      resultEl.innerHTML =
+        '<div class="sc-result__top"><img src="assets/doodles/' + ICON[r.lv] + '.svg" alt=""><div><span class="sc-level lv-' + r.lv + '">' + LABEL[r.lv] + '</span><h2 tabindex="-1">' + r.title + '</h2></div></div>' +
+        '<div class="sc-why"><strong>' + summary + '</strong><br>' + r.why + '</div>' +
+        '<div class="sc-tips"><h3>While you wait</h3><ul>' + tips + '</ul></div>' +
+        '<div class="sc-actions">' + btns + '</div>' +
+        '<button type="button" class="sc-back" id="sc-restart">Start over</button>';
+      go(3);
+      document.getElementById('sc-restart').addEventListener('click', function () {
+        state = { who: null, area: null, sev: null, dur: null };
+        ['data-who', 'data-area', 'data-sev', 'data-dur'].forEach(function (a) { mark(a, '__none__'); });
+        refreshNext(); window.treadPageInfo.flowCompleted = false; go(0);
+      });
+    });
+  })();
+</script>
+
+<!-- Playful motion (scroll pop-ins, count-ups). Safe to remove. -->
+<script src="motion.js" defer></script>
 
 <!-- Page info for Qualtrics targeting (JavaScript variable: window.treadPageInfo) -->
-<script>window.treadPageInfo = {"site": "tread-health", "page": "symptom-checker", "section": "patients", "specialty": "symptom-checker"};
-document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-feedback]');if(b){window.treadPageInfo.pageFeedback=b.getAttribute('data-feedback');}});</script>
+<script>window.treadPageInfo = {"site": "tread-health", "page": "symptom-checker", "section": "patients", "specialty": "symptom-checker", "flow": "symptom-checker", "flowStarted": false, "flowStep": 1, "flowCompleted": false};</script>
 <!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
-<script type='text/javascript'>
-(function(){var g=function(g){
-this.go=function(){var a=document.createElement("script");a.type="text/javascript";a.src=g;document.body&&document.body.appendChild(a)};
-this.start=function(){var t=this;"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",function(){t.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){t.go()}):t.go()};};
-try{(new g("https://zn3jksy3gb60ib6m1-qhealth.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_3JKSy3gb60iB6m1")).start()}catch(i){}})();
-</script><div id='ZN_3JKSy3gb60iB6m1'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
-<!--END WEBSITE FEEDBACK SNIPPET-->
 
+<script type='text/javascript'>
+
+(function(){var g=function(g){
+
+this.go=function(){var a=document.createElement("script");a.type="text/javascript";a.src=g;document.body&&document.body.appendChild(a)};
+
+this.start=function(){var t=this;"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",function(){t.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){t.go()}):t.go()};};
+
+try{(new g("https://zn0jvaixpvu5igezz-qdemo.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_0JvaiXpVU5igeZz")).start()}catch(i){}})();
+
+</script><div id='ZN_0JvaiXpVU5igeZz'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+
+<!--END WEBSITE FEEDBACK SNIPPET-->
 </body>
 </html>

@@ -5,8 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dr. Maria Chen, MD | Tread Health</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme.css">
 </head>
-<body id="page-doctor-profile-primary-care" data-page="doctor-profile-primary-care" data-section="doctors" data-specialty="primary-care">
+<body id="page-doctor-profile-primary-care" data-page="doctor-profile-primary-care" data-section="doctors">
+
 <!-- Demo Disclaimer Banner (NOT a real healthcare provider) -->
 <div class="demo-banner">
   ⚠️ This is a fictional demo website built for a product demonstration. Tread Health is not a real healthcare provider. For medical emergencies, call 911.
@@ -27,7 +29,6 @@
   </div>
 </div>
 
-<!-- Main Navigation -->
 <header class="site-header">
   <div class="container-lg header-inner">
 
@@ -49,17 +50,20 @@
             <h4>Featured Specialties</h4>
             <ul>
               <li><a href="services-primary-care.html">Primary Care</a></li>
+              <li><a href="services-pediatrics.html">Pediatrics</a></li>
               <li><a href="services-cardiology.html">Cardiology</a></li>
-              <li><a href="coming-soon.html?page=Urgent+Care">Urgent Care</a></li>
-              <li><a href="virtual-care.html">Virtual Care</a></li>
+              <li><a href="services-orthopedics.html">Orthopedics</a></li>
+              <li><a href="services-oncology.html">Oncology</a></li>
             </ul>
           </div>
           <div>
             <h4>More Services</h4>
             <ul>
-              <li><a href="coming-soon.html?page=Behavioral+Health">Behavioral Health</a></li>
-              <li><a href="coming-soon.html?page=Imaging+Services">Imaging Services</a></li>
-              <li><a href="coming-soon.html?page=Pharmacy">Pharmacy</a></li>
+              <li><a href="services-urgent-care.html">Urgent Care</a></li>
+              <li><a href="virtual-care.html">Virtual Care</a></li>
+              <li><a href="services-behavioral-health.html">Behavioral Health</a></li>
+              <li><a href="services-imaging.html">Imaging Services</a></li>
+              <li><a href="services-pharmacy.html">Pharmacy</a></li>
               <li><a href="services.html" class="link-arrow">View All Services &rarr;</a></li>
             </ul>
           </div>
@@ -83,8 +87,8 @@
           <div>
             <h4>Visiting</h4>
             <ul>
-              <li><a href="coming-soon.html?page=Accepted+Insurance">Accepted Insurance</a></li>
-              <li><a href="coming-soon.html?page=Visitor+Guidelines">Visitor Guidelines</a></li>
+              <li><a href="accepted-insurance.html">Accepted Insurance</a></li>
+              <li><a href="visitor-guidelines.html">Visitor Guidelines</a></li>
               <li><a href="locations.html" class="link-arrow">Find a Location &rarr;</a></li>
             </ul>
           </div>
@@ -107,13 +111,23 @@
 
     <p class="section-label">Services</p>
     <a href="services-primary-care.html" class="sub-link">Primary Care</a>
+    <a href="services-pediatrics.html" class="sub-link">Pediatrics</a>
     <a href="services-cardiology.html" class="sub-link">Cardiology</a>
+    <a href="services-orthopedics.html" class="sub-link">Orthopedics</a>
+    <a href="services-oncology.html" class="sub-link">Oncology</a>
+    <a href="services-urgent-care.html" class="sub-link">Urgent Care</a>
+    <a href="virtual-care.html" class="sub-link">Virtual Care</a>
+    <a href="services-behavioral-health.html" class="sub-link">Behavioral Health</a>
+    <a href="services-imaging.html" class="sub-link">Imaging Services</a>
+    <a href="services-pharmacy.html" class="sub-link">Pharmacy</a>
     <a href="services.html" class="sub-link" style="color:var(--blue);">View All Services &rarr;</a>
 
     <p class="section-label">Patients &amp; Visitors</p>
     <a href="myportal.html" class="sub-link">MyPortal Sign In</a>
     <a href="myportal-billing.html" class="sub-link">Pay a Bill</a>
     <a href="symptom-checker.html" class="sub-link">Symptom Checker</a>
+    <a href="accepted-insurance.html" class="sub-link">Accepted Insurance</a>
+    <a href="visitor-guidelines.html" class="sub-link">Visitor Guidelines</a>
 
     <a href="appointments.html" class="btn btn-primary">Schedule Appointment</a>
   </div>
@@ -122,23 +136,20 @@
 <nav class="breadcrumb"><div class="container"><a href="index.html">Home</a> / <a href="doctors.html">Find a Doctor</a> / Dr. Maria Chen</div></nav>
 
 <section class="profile-hero">
+  <img class="doodle bob" src="assets/doodles/stethoscope.svg" alt="" aria-hidden="true" style="width:70px; top:26px; right:7%; --r:8deg;">
+  <img class="doodle bob-slow" src="assets/doodles/sparkle.svg" alt="" aria-hidden="true" style="width:38px; bottom:22px; right:20%;">
+  <img class="doodle bob-slow" src="assets/doodles/cloud.svg" alt="" aria-hidden="true" style="width:84px; bottom:14%; left:3%; opacity:.9;">
   <div class="profile-hero-inner">
-    <div class="profile-avatar" style="background:#0054CE1A; color:#0054CE; font-weight:800; font-size:2.5rem;">MC</div>
+    <div class="profile-avatar" style="background:#0054CE1A; color:#0054CE; font-weight:800; font-size:2.5rem;"><img src="assets/img/doctor-chen.jpg" alt="Dr. Maria Chen, MD"></div>
     <div>
       <h1>Dr. Maria Chen, MD</h1>
       <span class="specialty-tag">Primary Care</span>
       <p class="credentials">Board Certified in Internal Medicine &middot; Accepting New Patients</p>
       <div class="rating">
-        <div class="stars">
-          <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-          <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-          <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-          <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-          <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-        </div>
+        <div class="stars"><svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg></div>
         <span>4.9 (238 patient reviews)</span>
       </div>
-      <a href="appointments.html?doctor=primary-care" class="btn btn-primary">Schedule with Dr. Chen</a>
+      <a href="appointments.html?doctor=primary-care" id="schedule-with-doctor" data-doctor="chen" class="btn btn-primary">Schedule with Dr. Chen</a>
     </div>
   </div>
 </section>
@@ -146,15 +157,21 @@
 <div class="profile-body">
   <div class="profile-main">
     <h2>About Dr. Chen</h2>
-    <p>Dr. Maria Chen is a primary care physician at Tread Health's Downtown Campus, where she has practiced for over a decade. She focuses on preventive medicine and building long-term relationships with her patients, believing that the best care comes from truly knowing the person in front of her.</p>
-    <p>Dr. Chen sees patients of all ages for annual physicals, chronic condition management, and everyday health concerns, and is known for taking extra time to explain treatment options clearly.</p>
+    <p>Dr. Maria Chen is a primary care physician at Tread Medical Center, where she has practiced for over a decade. She focuses on preventive medicine and building long-term relationships with her patients, believing that the best care comes from truly knowing the person in front of her.</p><p>Dr. Chen sees patients of all ages for annual physicals, chronic condition management, and everyday health concerns, and is known for taking extra time to explain treatment options clearly.</p>
     <h2>Education &amp; Training</h2>
     <p>MD, Lakeshore University School of Medicine &middot; Residency in Internal Medicine, Metro City General Hospital</p>
+    <h2>Clinical interests</h2>
+    <div class="loc-tags" style="margin:0 0 28px;"><span class="tag">Preventive care</span><span class="tag">Diabetes & blood pressure</span><span class="tag">Annual physicals</span><span class="tag">Healthy aging</span><span class="tag">Care for the whole family</span></div>
+    <div class="quote-card" style="margin-top:36px;">
+      <img class="doodle " src="assets/doodles/sparkle.svg" alt="" aria-hidden="true" style="">
+      <blockquote style="font-size:1.15rem;">Keeps a jar of stickers on her desk for patients of every age. The grown-ups pick the dinosaurs most often.</blockquote>
+      <cite>A little more about Dr. Chen</cite>
+    </div>
   </div>
   <div class="profile-facts">
     <dl>
       <div><dt>Specialty</dt><dd>Primary Care / Internal Medicine</dd></div>
-      <div><dt>Location</dt><dd>Downtown Campus</dd></div>
+      <div><dt>Location</dt><dd>Tread Medical Center</dd></div>
       <div><dt>Languages</dt><dd>English, Mandarin</dd></div>
       <div><dt>Accepting New Patients</dt><dd>Yes</dd></div>
       <div><dt>Telehealth Visits</dt><dd>Available</dd></div>
@@ -173,9 +190,9 @@
     </div>
     <p class="reviews-disclaimer">Our patient experience surveys, conducted by the independent research firm Qualtrics, present a thorough and accurate picture for patients and their families. Using national best practices, Tread Health has developed an initiative to provide patient experience ratings for our providers. (This survey program and all ratings shown are fictional, created for demonstration purposes.)</p>
     <div class="review-search">
-      <input type="text" id="review-search-pc" placeholder="Search reviews">
+      <input type="text" id="review-search" placeholder="Search reviews">
     </div>
-    <div id="reviews-list-pc">
+    <div id="reviews-list">
     <div class="review-row" data-review-text="dr. chen actually listens. she took time to explain what my labs meant and didn't rush me out the door.">
       <div class="review-row__meta">
         <div class="stars"><svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg></div>
@@ -217,29 +234,10 @@
       <p>Wait times can run a little long, but the quality of care makes up for it.</p>
     </div>
     </div>
-    <div class="no-review-results" id="no-review-results-pc">No reviews match your search.</div>
-    <span class="show-more-btn" id="show-more-pc" onclick="showMoreReviews_pc()">Show more</span>
+    <div class="no-review-results" id="no-review-results">No reviews match your search.</div>
+    <span class="show-more-btn" id="show-more" onclick="showMoreReviews()">Show more</span>
   </div>
 </div>
-
-<script>
-  function showMoreReviews_pc() {
-    document.querySelectorAll('#reviews-list-pc .review-row.is-hidden').forEach(function (r) { r.classList.remove('is-hidden'); });
-    document.getElementById('show-more-pc').style.display = 'none';
-  }
-  document.getElementById('review-search-pc').addEventListener('input', function (e) {
-    var q = e.target.value.trim().toLowerCase();
-    var rows = document.querySelectorAll('#reviews-list-pc .review-row');
-    var visibleCount = 0;
-    rows.forEach(function (row) {
-      var matches = !q || row.getAttribute('data-review-text').indexOf(q) !== -1;
-      row.classList.toggle('is-hidden', !matches);
-      if (matches) visibleCount++;
-    });
-    document.getElementById('show-more-pc').style.display = q ? 'none' : '';
-    document.getElementById('no-review-results-pc').classList.toggle('is-visible', visibleCount === 0);
-  });
-</script>
 
 <!-- Footer -->
 <footer class="site-footer">
@@ -260,7 +258,7 @@
       </div>
     </div>
 
-    <div class="footer-col">
+        <div class="footer-col">
       <h4>I Would Like To</h4>
       <ul>
         <li><a href="doctors.html">Find a Doctor</a></li>
@@ -276,8 +274,9 @@
       <ul>
         <li><a href="myportal.html">MyPortal Sign In</a></li>
         <li><a href="myportal-billing.html">Pay a Bill</a></li>
-        <li><a href="coming-soon.html?page=Accepted+Insurance">Accepted Insurance</a></li>
-        <li><a href="coming-soon.html?page=Visitor+Guidelines">Visitor Guidelines</a></li>
+        <li><a href="accepted-insurance.html">Accepted Insurance</a></li>
+        <li><a href="visitor-guidelines.html">Visitor Guidelines</a></li>
+        <li><a href="patient-stories.html">Patient Stories</a></li>
       </ul>
     </div>
 
@@ -285,18 +284,21 @@
       <h4>Services</h4>
       <ul>
         <li><a href="services-primary-care.html">Primary Care</a></li>
+        <li><a href="services-pediatrics.html">Pediatrics</a></li>
         <li><a href="services-cardiology.html">Cardiology</a></li>
-        <li><a href="coming-soon.html?page=Urgent+Care">Urgent Care</a></li>
+        <li><a href="services-urgent-care.html">Urgent Care</a></li>
         <li><a href="virtual-care.html">Virtual Care</a></li>
+        <li><a href="services-behavioral-health.html">Behavioral Health</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
       <h4>About Tread Health</h4>
       <ul>
-        <li><a href="coming-soon.html?page=Our+Story">Our Story</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
         <li><a href="careers.html">Careers</a></li>
-        <li><a href="coming-soon.html?page=Volunteering">Volunteering</a></li>
+        <li><a href="volunteering.html">Volunteering</a></li>
+        <li><a href="giving.html">Giving</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
@@ -322,17 +324,44 @@
   });
 </script>
 
+<script>
+  function showMoreReviews() {
+    document.querySelectorAll('#reviews-list .review-row.is-hidden').forEach(function (r) { r.classList.remove('is-hidden'); });
+    document.getElementById('show-more').style.display = 'none';
+  }
+  document.getElementById('review-search').addEventListener('input', function (e) {
+    var q = e.target.value.trim().toLowerCase();
+    var rows = document.querySelectorAll('#reviews-list .review-row');
+    var visibleCount = 0;
+    rows.forEach(function (row) {
+      var matches = !q || row.getAttribute('data-review-text').indexOf(q) !== -1;
+      row.classList.toggle('is-hidden', !matches);
+      if (matches) visibleCount++;
+    });
+    document.getElementById('show-more').style.display = q ? 'none' : '';
+    document.getElementById('no-review-results').classList.toggle('is-visible', visibleCount === 0);
+  });
+</script>
+
+<!-- Playful motion (scroll pop-ins, count-ups). Safe to remove. -->
+<script src="motion.js" defer></script>
 
 <!-- Page info for Qualtrics targeting (JavaScript variable: window.treadPageInfo) -->
-<script>window.treadPageInfo = {"site": "tread-health", "page": "doctor-profile-primary-care", "section": "doctors", "specialty": "primary-care"};
-document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-feedback]');if(b){window.treadPageInfo.pageFeedback=b.getAttribute('data-feedback');}});</script>
+<script>window.treadPageInfo = {"site": "tread-health", "page": "doctor-profile-primary-care", "section": "doctors", "specialty": "primary-care", "doctor": "chen"};</script>
 <!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
+
 <script type='text/javascript'>
+
 (function(){var g=function(g){
+
 this.go=function(){var a=document.createElement("script");a.type="text/javascript";a.src=g;document.body&&document.body.appendChild(a)};
+
 this.start=function(){var t=this;"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",function(){t.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){t.go()}):t.go()};};
-try{(new g("https://zn3jksy3gb60ib6m1-qhealth.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_3JKSy3gb60iB6m1")).start()}catch(i){}})();
-</script><div id='ZN_3JKSy3gb60iB6m1'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+
+try{(new g("https://zn0jvaixpvu5igezz-qdemo.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_0JvaiXpVU5igeZz")).start()}catch(i){}})();
+
+</script><div id='ZN_0JvaiXpVU5igeZz'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+
 <!--END WEBSITE FEEDBACK SNIPPET-->
 </body>
 </html>

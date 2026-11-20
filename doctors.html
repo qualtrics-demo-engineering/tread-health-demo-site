@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Find a Doctor | Tread Health</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme.css">
 </head>
 <body id="page-find-a-doctor" data-page="find-a-doctor" data-section="doctors">
 <!-- Demo Disclaimer Banner (NOT a real healthcare provider) -->
@@ -49,17 +50,20 @@
             <h4>Featured Specialties</h4>
             <ul>
               <li><a href="services-primary-care.html">Primary Care</a></li>
+              <li><a href="services-pediatrics.html">Pediatrics</a></li>
               <li><a href="services-cardiology.html">Cardiology</a></li>
-              <li><a href="coming-soon.html?page=Urgent+Care">Urgent Care</a></li>
-              <li><a href="virtual-care.html">Virtual Care</a></li>
+              <li><a href="services-orthopedics.html">Orthopedics</a></li>
+              <li><a href="services-oncology.html">Oncology</a></li>
             </ul>
           </div>
           <div>
             <h4>More Services</h4>
             <ul>
-              <li><a href="coming-soon.html?page=Behavioral+Health">Behavioral Health</a></li>
-              <li><a href="coming-soon.html?page=Imaging+Services">Imaging Services</a></li>
-              <li><a href="coming-soon.html?page=Pharmacy">Pharmacy</a></li>
+              <li><a href="services-urgent-care.html">Urgent Care</a></li>
+              <li><a href="virtual-care.html">Virtual Care</a></li>
+              <li><a href="services-behavioral-health.html">Behavioral Health</a></li>
+              <li><a href="services-imaging.html">Imaging Services</a></li>
+              <li><a href="services-pharmacy.html">Pharmacy</a></li>
               <li><a href="services.html" class="link-arrow">View All Services &rarr;</a></li>
             </ul>
           </div>
@@ -83,8 +87,8 @@
           <div>
             <h4>Visiting</h4>
             <ul>
-              <li><a href="coming-soon.html?page=Accepted+Insurance">Accepted Insurance</a></li>
-              <li><a href="coming-soon.html?page=Visitor+Guidelines">Visitor Guidelines</a></li>
+              <li><a href="accepted-insurance.html">Accepted Insurance</a></li>
+              <li><a href="visitor-guidelines.html">Visitor Guidelines</a></li>
               <li><a href="locations.html" class="link-arrow">Find a Location &rarr;</a></li>
             </ul>
           </div>
@@ -107,13 +111,23 @@
 
     <p class="section-label">Services</p>
     <a href="services-primary-care.html" class="sub-link">Primary Care</a>
+    <a href="services-pediatrics.html" class="sub-link">Pediatrics</a>
     <a href="services-cardiology.html" class="sub-link">Cardiology</a>
+    <a href="services-orthopedics.html" class="sub-link">Orthopedics</a>
+    <a href="services-oncology.html" class="sub-link">Oncology</a>
+    <a href="services-urgent-care.html" class="sub-link">Urgent Care</a>
+    <a href="virtual-care.html" class="sub-link">Virtual Care</a>
+    <a href="services-behavioral-health.html" class="sub-link">Behavioral Health</a>
+    <a href="services-imaging.html" class="sub-link">Imaging Services</a>
+    <a href="services-pharmacy.html" class="sub-link">Pharmacy</a>
     <a href="services.html" class="sub-link" style="color:var(--blue);">View All Services &rarr;</a>
 
     <p class="section-label">Patients &amp; Visitors</p>
     <a href="myportal.html" class="sub-link">MyPortal Sign In</a>
     <a href="myportal-billing.html" class="sub-link">Pay a Bill</a>
     <a href="symptom-checker.html" class="sub-link">Symptom Checker</a>
+    <a href="accepted-insurance.html" class="sub-link">Accepted Insurance</a>
+    <a href="visitor-guidelines.html" class="sub-link">Visitor Guidelines</a>
 
     <a href="appointments.html" class="btn btn-primary">Schedule Appointment</a>
   </div>
@@ -138,9 +152,9 @@
     </select>
     <select id="search-location">
       <option value="">All Locations</option>
-      <option value="Downtown Campus">Downtown Campus</option>
-      <option value="Northside Clinic">Northside Clinic</option>
-      <option value="Riverside Medical Center">Riverside Medical Center</option>
+      <option value="Tread Medical Center">Tread Medical Center</option>
+      <option value="Tread Clinic">Tread Clinic</option>
+      <option value="Tread North">Tread North</option>
     </select>
   </div>
 </div>
@@ -150,25 +164,18 @@
 <p class="no-results" id="no-results">No doctors match your search. Try adjusting your filters.</p>
 
 <div style="padding:0 20px 64px;">
-    <div id="qsi-survey-find-a-doctor" class="survey-embed-slot">
-      Qualtrics survey embed target — was it easy to find a doctor?
-      <div class="thumbs">
-        <button type="button" class="thumb-up" data-feedback="up" aria-label="Yes, this helped"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-7"></path></svg></button>
-        <button type="button" class="thumb-down" data-feedback="down" aria-label="No, I still have questions"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="transform: scaleY(-1);"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-7"></path></svg></button>
-      </div>
-      <code>#qsi-survey-find-a-doctor</code>
-    </div>
+    <div id="qsi-survey-find-a-doctor" class="tread-embedded-feedback"></div>
 </div>
 
 <script>
   // Simple built-in doctor directory. No backend — just a small array we filter client-side.
   var DOCTORS = [
-    { name: "Dr. Maria Chen, MD", specialty: "Primary Care", location: "Downtown Campus", rating: "4.9", href: "doctor-profile-primary-care.html", initials: "MC", color: "#0054CE" },
-    { name: "Dr. James Whitfield, MD", specialty: "Cardiology", location: "Downtown Campus", rating: "4.8", href: "doctor-profile-cardiology.html", initials: "JW", color: "#041E42" },
-    { name: "Dr. Priya Nair, MD", specialty: "Primary Care", location: "Northside Clinic", rating: "4.9", href: "coming-soon.html?page=Provider+Profile", initials: "PN", color: "#FF8B6A" },
-    { name: "Dr. Robert Kim, MD", specialty: "Cardiology", location: "Riverside Medical Center", rating: "4.7", href: "coming-soon.html?page=Provider+Profile", initials: "RK", color: "#0054CE" },
-    { name: "Dr. Sarah Alvarez, MD", specialty: "Pediatrics", location: "Northside Clinic", rating: "4.9", href: "coming-soon.html?page=Provider+Profile", initials: "SA", color: "#5FA777" },
-    { name: "Dr. Daniel Osei, MD", specialty: "Orthopedics", location: "Riverside Medical Center", rating: "4.6", href: "coming-soon.html?page=Provider+Profile", initials: "DO", color: "#FFC96B" }
+    { name: "Dr. Maria Chen, MD", specialty: "Primary Care", location: "Tread Medical Center", rating: "4.9", href: "doctor-profile-primary-care.html", initials: "MC", photo: "doctor-chen", apptKey: "primary-care", color: "#0054CE" },
+    { name: "Dr. James Whitfield, MD", specialty: "Cardiology", location: "Tread Medical Center", rating: "4.8", href: "doctor-profile-cardiology.html", initials: "JW", photo: "doctor-whitfield", apptKey: "cardiology", color: "#041E42" },
+    { name: "Dr. Priya Nair, MD", specialty: "Primary Care", location: "Tread Clinic", rating: "4.9", href: "doctor-profile-nair.html", initials: "PN", photo: "doctor-nair", apptKey: "nair", color: "#FF8B6A" },
+    { name: "Dr. Robert Kim, MD", specialty: "Cardiology", location: "Tread North", rating: "4.7", href: "doctor-profile-kim.html", initials: "RK", photo: "doctor-kim", apptKey: "kim", color: "#0054CE" },
+    { name: "Dr. Sarah Alvarez, MD", specialty: "Pediatrics", location: "Tread Clinic", rating: "4.9", href: "doctor-profile-alvarez.html", initials: "SA", photo: "doctor-alvarez", apptKey: "alvarez", color: "#5FA777" },
+    { name: "Dr. Daniel Osei, MD", specialty: "Orthopedics", location: "Tread North", rating: "4.6", href: "doctor-profile-osei.html", initials: "DO", photo: "doctor-osei", apptKey: "osei", color: "#FFC96B" }
   ];
 
   var grid = document.getElementById('doctor-grid');
@@ -205,11 +212,9 @@
     filtered.forEach(function (doc) {
       var card = document.createElement('div');
       card.className = 'doctor-card';
-      var apptHref = 'appointments.html';
-      if (doc.specialty === 'Primary Care') apptHref = 'appointments.html?doctor=primary-care';
-      if (doc.specialty === 'Cardiology') apptHref = 'appointments.html?doctor=cardiology';
+      var apptHref = 'appointments.html?doctor=' + doc.apptKey;
       card.innerHTML =
-        '<div class="doctor-card__avatar" style="background:' + doc.color + '1A; color:' + doc.color + '; font-weight:800; font-size:1.5rem;">' + doc.initials + '</div>' +
+        '<div class="doctor-card__avatar" style="background:' + doc.color + '1A; color:' + doc.color + '; font-weight:800; font-size:1.5rem;">' + (doc.photo ? '<img src="assets/img/' + doc.photo + '.jpg" alt="' + doc.name + '" loading="lazy">' : doc.initials) + '</div>' +
         '<h3>' + doc.name + '</h3>' +
         '<span class="specialty-tag">' + doc.specialty + '</span>' +
         '<p class="location">' + locationIcon() + doc.location + '</p>' +
@@ -259,7 +264,7 @@
       </div>
     </div>
 
-    <div class="footer-col">
+        <div class="footer-col">
       <h4>I Would Like To</h4>
       <ul>
         <li><a href="doctors.html">Find a Doctor</a></li>
@@ -275,8 +280,9 @@
       <ul>
         <li><a href="myportal.html">MyPortal Sign In</a></li>
         <li><a href="myportal-billing.html">Pay a Bill</a></li>
-        <li><a href="coming-soon.html?page=Accepted+Insurance">Accepted Insurance</a></li>
-        <li><a href="coming-soon.html?page=Visitor+Guidelines">Visitor Guidelines</a></li>
+        <li><a href="accepted-insurance.html">Accepted Insurance</a></li>
+        <li><a href="visitor-guidelines.html">Visitor Guidelines</a></li>
+        <li><a href="patient-stories.html">Patient Stories</a></li>
       </ul>
     </div>
 
@@ -284,18 +290,21 @@
       <h4>Services</h4>
       <ul>
         <li><a href="services-primary-care.html">Primary Care</a></li>
+        <li><a href="services-pediatrics.html">Pediatrics</a></li>
         <li><a href="services-cardiology.html">Cardiology</a></li>
-        <li><a href="coming-soon.html?page=Urgent+Care">Urgent Care</a></li>
+        <li><a href="services-urgent-care.html">Urgent Care</a></li>
         <li><a href="virtual-care.html">Virtual Care</a></li>
+        <li><a href="services-behavioral-health.html">Behavioral Health</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
       <h4>About Tread Health</h4>
       <ul>
-        <li><a href="coming-soon.html?page=Our+Story">Our Story</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
         <li><a href="careers.html">Careers</a></li>
-        <li><a href="coming-soon.html?page=Volunteering">Volunteering</a></li>
+        <li><a href="volunteering.html">Volunteering</a></li>
+        <li><a href="giving.html">Giving</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
@@ -322,16 +331,26 @@
 </script>
 
 
+<!-- Playful motion (scroll pop-ins, count-ups). Safe to remove. -->
+<script src="motion.js" defer></script>
+
 <!-- Page info for Qualtrics targeting (JavaScript variable: window.treadPageInfo) -->
 <script>window.treadPageInfo = {"site": "tread-health", "page": "find-a-doctor", "section": "doctors"};
 document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-feedback]');if(b){window.treadPageInfo.pageFeedback=b.getAttribute('data-feedback');}});</script>
 <!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
+
 <script type='text/javascript'>
+
 (function(){var g=function(g){
+
 this.go=function(){var a=document.createElement("script");a.type="text/javascript";a.src=g;document.body&&document.body.appendChild(a)};
+
 this.start=function(){var t=this;"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",function(){t.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){t.go()}):t.go()};};
-try{(new g("https://zn3jksy3gb60ib6m1-qhealth.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_3JKSy3gb60iB6m1")).start()}catch(i){}})();
-</script><div id='ZN_3JKSy3gb60iB6m1'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+
+try{(new g("https://zn0jvaixpvu5igezz-qdemo.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_0JvaiXpVU5igeZz")).start()}catch(i){}})();
+
+</script><div id='ZN_0JvaiXpVU5igeZz'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+
 <!--END WEBSITE FEEDBACK SNIPPET-->
 </body>
 </html>

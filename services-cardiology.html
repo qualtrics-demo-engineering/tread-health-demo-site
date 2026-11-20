@@ -5,8 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cardiology | Tread Health</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme.css">
 </head>
-<body id="page-services-cardiology" data-page="services-cardiology" data-section="services" data-specialty="cardiology">
+<body id="page-services-cardiology" data-page="services-cardiology" data-section="services">
+
 <!-- Demo Disclaimer Banner (NOT a real healthcare provider) -->
 <div class="demo-banner">
   ⚠️ This is a fictional demo website built for a product demonstration. Tread Health is not a real healthcare provider. For medical emergencies, call 911.
@@ -27,7 +29,6 @@
   </div>
 </div>
 
-<!-- Main Navigation -->
 <header class="site-header">
   <div class="container-lg header-inner">
 
@@ -49,17 +50,20 @@
             <h4>Featured Specialties</h4>
             <ul>
               <li><a href="services-primary-care.html">Primary Care</a></li>
+              <li><a href="services-pediatrics.html">Pediatrics</a></li>
               <li><a href="services-cardiology.html">Cardiology</a></li>
-              <li><a href="coming-soon.html?page=Urgent+Care">Urgent Care</a></li>
-              <li><a href="virtual-care.html">Virtual Care</a></li>
+              <li><a href="services-orthopedics.html">Orthopedics</a></li>
+              <li><a href="services-oncology.html">Oncology</a></li>
             </ul>
           </div>
           <div>
             <h4>More Services</h4>
             <ul>
-              <li><a href="coming-soon.html?page=Behavioral+Health">Behavioral Health</a></li>
-              <li><a href="coming-soon.html?page=Imaging+Services">Imaging Services</a></li>
-              <li><a href="coming-soon.html?page=Pharmacy">Pharmacy</a></li>
+              <li><a href="services-urgent-care.html">Urgent Care</a></li>
+              <li><a href="virtual-care.html">Virtual Care</a></li>
+              <li><a href="services-behavioral-health.html">Behavioral Health</a></li>
+              <li><a href="services-imaging.html">Imaging Services</a></li>
+              <li><a href="services-pharmacy.html">Pharmacy</a></li>
               <li><a href="services.html" class="link-arrow">View All Services &rarr;</a></li>
             </ul>
           </div>
@@ -83,8 +87,8 @@
           <div>
             <h4>Visiting</h4>
             <ul>
-              <li><a href="coming-soon.html?page=Accepted+Insurance">Accepted Insurance</a></li>
-              <li><a href="coming-soon.html?page=Visitor+Guidelines">Visitor Guidelines</a></li>
+              <li><a href="accepted-insurance.html">Accepted Insurance</a></li>
+              <li><a href="visitor-guidelines.html">Visitor Guidelines</a></li>
               <li><a href="locations.html" class="link-arrow">Find a Location &rarr;</a></li>
             </ul>
           </div>
@@ -107,58 +111,124 @@
 
     <p class="section-label">Services</p>
     <a href="services-primary-care.html" class="sub-link">Primary Care</a>
+    <a href="services-pediatrics.html" class="sub-link">Pediatrics</a>
     <a href="services-cardiology.html" class="sub-link">Cardiology</a>
+    <a href="services-orthopedics.html" class="sub-link">Orthopedics</a>
+    <a href="services-oncology.html" class="sub-link">Oncology</a>
+    <a href="services-urgent-care.html" class="sub-link">Urgent Care</a>
+    <a href="virtual-care.html" class="sub-link">Virtual Care</a>
+    <a href="services-behavioral-health.html" class="sub-link">Behavioral Health</a>
+    <a href="services-imaging.html" class="sub-link">Imaging Services</a>
+    <a href="services-pharmacy.html" class="sub-link">Pharmacy</a>
     <a href="services.html" class="sub-link" style="color:var(--blue);">View All Services &rarr;</a>
 
     <p class="section-label">Patients &amp; Visitors</p>
     <a href="myportal.html" class="sub-link">MyPortal Sign In</a>
     <a href="myportal-billing.html" class="sub-link">Pay a Bill</a>
     <a href="symptom-checker.html" class="sub-link">Symptom Checker</a>
+    <a href="accepted-insurance.html" class="sub-link">Accepted Insurance</a>
+    <a href="visitor-guidelines.html" class="sub-link">Visitor Guidelines</a>
 
     <a href="appointments.html" class="btn btn-primary">Schedule Appointment</a>
   </div>
 </header>
 
-<nav class="breadcrumb" style="background:var(--navy);"><div class="container" style="color:rgba(255,255,255,0.6);"><a href="index.html" style="color:rgba(255,255,255,0.6);">Home</a> / <a href="services.html" style="color:rgba(255,255,255,0.6);">Services</a> / Cardiology</div></nav>
+<nav class="breadcrumb"><div class="container"><a href="index.html">Home</a> / <a href="services.html">Services</a> / Cardiology</div></nav>
 
-<section class="specialty-hero">
-  <span class="badge">Featured Specialty</span>
-  <h1>Cardiology</h1>
-  <p>Nationally recognized heart and vascular care, from routine screenings to advanced diagnosis and treatment.</p>
+<section class="svc-hero svc-hero--coral">
+  <div class="svc-hero__grid">
+    <div class="svc-hero__copy">
+      <h1>Cardiology</h1>
+      <p class="lead">Nationally recognized heart and vascular care, from routine screenings to advanced diagnosis and treatment.</p>
+      <div class="fact-chips"><span><img src="assets/doodles/heart-pulse.svg" alt="">EKG & imaging on site</span><span><img src="assets/doodles/calendar.svg" alt="">Quick specialist visits</span><span><img src="assets/doodles/video-call.svg" alt="">Video follow-ups</span></div>
+      <div class="svc-hero__actions">
+        <a href="appointments.html" class="btn btn-primary btn-lg">Schedule an Appointment</a>
+        <a href="doctors.html?specialty=Cardiology" class="btn btn-outline btn-lg">Find a Cardiologist</a>
+      </div>
+    </div>
+    <div class="svc-hero__art">
+      <img class="doodle bob" src="assets/doodles/heart-pulse.svg" alt="" aria-hidden="true" style="width:118px; top:-26px; right:-2%; --r:8deg;">
+      <img class="doodle bob-slow" src="assets/doodles/sparkle.svg" alt="" aria-hidden="true" style="width:38px; bottom:22%; left:-3%;">
+      <img class="doodle bob-slow" src="assets/doodles/star.svg" alt="" aria-hidden="true" style="width:34px; top:36%; right:-3%;">
+      <div class="photo-frame"><img src="assets/img/care-cardiology.jpg" alt="A cardiologist uses a heart model to explain results to a patient and his wife in an exam room with heart-health posters"></div>
+      <span class="callout" style="left:6%; bottom:-4px; rotate:-3deg;">listen to your heart</span>
+    </div>
+  </div>
 </section>
 
-<div class="info-grid">
-  <div class="info-main">
-    <h2>What We Treat</h2>
-    <p>Our cardiology team diagnoses and treats conditions affecting the heart and blood vessels, combining advanced imaging and testing with a personalized approach to long-term heart health.</p>
-    <ul class="checklist">
-      <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Coronary artery disease &amp; heart attack care</li>
-      <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Arrhythmia &amp; heart rhythm disorders</li>
-      <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Heart failure management</li>
-      <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Preventive cardiology &amp; risk screening</li>
-    </ul>
-    <h2>What to Expect</h2>
-    <p>New patients typically begin with a consultation, EKG, and risk assessment. From there, our team builds a treatment plan tailored to your heart health goals — whether that means lifestyle changes, medication, or advanced procedures.</p>
-
-    <div id="qsi-survey-cardiology" class="survey-embed-slot">
-      Qualtrics survey embed target — did this page answer your questions?
-      <div class="thumbs">
-        <button type="button" class="thumb-up" data-feedback="up" aria-label="Yes, this helped"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-7"></path></svg></button>
-        <button type="button" class="thumb-down" data-feedback="down" aria-label="No, I still have questions"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="transform: scaleY(-1);"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-7"></path></svg></button>
+<div class="svc-layout">
+  <div class="svc-main">
+    <section>
+      <h2>What we treat</h2>
+      <p class="intro">Our cardiology team diagnoses and treats conditions affecting the heart and blood vessels, combining advanced imaging and testing with a personalized approach to long-term heart health.</p>
+      <div class="treat-grid">
+        <div class="treat-card treat-card--coral"><img src="assets/doodles/heart-pulse.svg" alt=""><div><h3>Coronary artery disease & heart attack care</h3><p>Diagnosis, treatment, and a plan to protect your heart.</p></div></div>
+        <div class="treat-card treat-card--purple"><img src="assets/doodles/clock.svg" alt=""><div><h3>Arrhythmia & heart rhythm disorders</h3><p>Palpitations and irregular rhythms, tested and treated.</p></div></div>
+        <div class="treat-card treat-card--blue"><img src="assets/doodles/heart.svg" alt=""><div><h3>Heart failure management</h3><p>Ongoing care and tune-ups that help you feel your best.</p></div></div>
+        <div class="treat-card treat-card--mint"><img src="assets/doodles/shield.svg" alt=""><div><h3>Preventive cardiology & risk screening</h3><p>Know your numbers and what to do about them.</p></div></div>
+        <div class="treat-card treat-card--sun"><img src="assets/doodles/xray.svg" alt=""><div><h3>Heart imaging & stress testing</h3><p>Echo, stress tests, and monitoring, often in one visit.</p></div></div>
+        <div class="treat-card treat-card--pink"><img src="assets/doodles/sun.svg" alt=""><div><h3>Cardiac rehab</h3><p>Guided exercise and support after a heart event.</p></div></div>
       </div>
-      <code>#qsi-survey-cardiology</code>
-    </div>
+      
+    </section>
+
+    <section>
+      <h2>What to expect</h2>
+      <p class="intro">We explain every result in plain language, and we never rush the conversation.</p>
+      <div class="steps">
+        <div class="step"><h3>Your consultation</h3><p>New patients usually begin with a conversation, an EKG, and a risk assessment.</p></div>
+        <div class="step"><h3>Tests, if needed</h3><p>Imaging or a stress test helps us see the full picture. Most are done on site.</p></div>
+        <div class="step"><h3>Your plan</h3><p>Our team builds a treatment plan tailored to your heart health goals, whether that means lifestyle changes, medication, or advanced procedures.</p></div>
+        <div class="step"><h3>Follow-up that fits</h3><p>Check in by video, phone, or MyPortal. Rehab and support are there if you need them.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Who you will meet</h2>
+      <p class="intro">Real people who will know your name.</p>
+      <div class="team-strip"><a href="doctor-profile-cardiology.html" class="doc-bubble"><div class="doc-bubble__photo"><img src="assets/img/doctor-whitfield.jpg" alt="Dr. James Whitfield, MD" loading="lazy"></div><strong>Dr. James Whitfield</strong><span>Tread Medical Center</span></a><a href="doctor-profile-kim.html" class="doc-bubble"><div class="doc-bubble__photo"><img src="assets/img/doctor-kim.jpg" alt="Dr. Robert Kim, MD" loading="lazy"></div><strong>Dr. Robert Kim</strong><span>Tread North</span></a></div>
+    </section>
+
+    <section>
+      <div class="quote-card">
+        <img class="doodle " src="assets/doodles/speech.svg" alt="" aria-hidden="true" style="">
+        <blockquote>&ldquo;He walked me through my results in plain English, with a drawing. It was the first time a heart doctor made me feel like a partner.&rdquo;</blockquote>
+        <cite>Walter P., Cardiology patient</cite>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Common questions</h2>
+      <div style="margin-top:18px;">
+        <details><summary>Do I need a referral to see a cardiologist?</summary><div class="answer"><p>Many patients are referred by their primary care doctor, but you can also schedule directly. Check with your insurance plan if you are unsure.</p></div></details>
+        <details><summary>What is an EKG?</summary><div class="answer"><p>An EKG records your heart’s electrical activity using small stickers on your chest. It is quick, painless, and takes just a few minutes.</p></div></details>
+        <details><summary>How should I prepare for a stress test?</summary><div class="answer"><p>We will send you instructions ahead of time. In general, wear comfortable clothes and shoes and bring your medication list.</p></div></details>
+        <details><summary>Can I see my results online?</summary><div class="answer"><p>Yes. Most results and visit summaries appear in MyPortal, and your doctor will talk them through with you.</p></div></details>
+      </div>
+    </section>
+
+    <div id="qsi-survey-cardiology" class="tread-embedded-feedback"></div>
   </div>
-  <div class="info-sidebar">
-    <h3>Ready to get started?</h3>
-    <a href="appointments.html" class="btn btn-primary">Schedule an Appointment</a>
-    <a href="doctors.html?specialty=Cardiology" class="btn btn-outline" style="width:100%; text-align:center; display:block;">Find a Cardiologist</a>
-    <div class="info-sidebar-list">
-      <a href="doctor-profile-cardiology.html">Meet Dr. James Whitfield &rarr;</a>
-      <a href="locations.html">Find a Location &rarr;</a>
+
+  <aside class="svc-side">
+    <div class="info-sidebar">
+      <h3>Ready to get started?</h3>
+      <a href="appointments.html" class="btn btn-primary">Schedule an Appointment</a>
+      <a href="doctors.html?specialty=Cardiology" class="btn btn-outline">Find a Cardiologist</a>
+      <div class="info-sidebar-list"><a href="doctor-profile-cardiology.html">Meet Dr. James Whitfield &rarr;</a><a href="doctor-profile-kim.html">Meet Dr. Robert Kim &rarr;</a></div>
+      <h4>Where to find us</h4><div class="where-list"><a class="where-card" href="locations.html"><img src="assets/img/tread-medical-center.jpg" alt="Tread Medical Center" loading="lazy"><div><strong>Tread Medical Center</strong><span>Our hospital campus, with emergency care open 24/7</span></div></a><a class="where-card" href="locations.html"><img src="assets/img/tread-north.jpg" alt="Tread North" loading="lazy"><div><strong>Tread North</strong><span>Specialty care, imaging, and urgent care</span></div></a></div>
     </div>
-  </div>
+  </aside>
 </div>
+
+<section class="cta-band">
+  <img class="doodle " src="assets/doodles/sparkle.svg" alt="" aria-hidden="true" style="width:54px; top:16%; left:8%;">
+  <img class="doodle " src="assets/doodles/balloons.svg" alt="" aria-hidden="true" style="width:80px; bottom:12%; right:8%;">
+  <img class="doodle " src="assets/doodles/star.svg" alt="" aria-hidden="true" style="width:40px; top:20%; right:22%;">
+  <h2>Questions? We are happy to help.</h2>
+  <p>Call us at (555) 010-2000 or send a message in MyPortal.</p>
+  <a href="contact.html" class="btn btn-white btn-lg">Contact us</a>
+</section>
 
 <!-- Footer -->
 <footer class="site-footer">
@@ -179,7 +249,7 @@
       </div>
     </div>
 
-    <div class="footer-col">
+        <div class="footer-col">
       <h4>I Would Like To</h4>
       <ul>
         <li><a href="doctors.html">Find a Doctor</a></li>
@@ -195,8 +265,9 @@
       <ul>
         <li><a href="myportal.html">MyPortal Sign In</a></li>
         <li><a href="myportal-billing.html">Pay a Bill</a></li>
-        <li><a href="coming-soon.html?page=Accepted+Insurance">Accepted Insurance</a></li>
-        <li><a href="coming-soon.html?page=Visitor+Guidelines">Visitor Guidelines</a></li>
+        <li><a href="accepted-insurance.html">Accepted Insurance</a></li>
+        <li><a href="visitor-guidelines.html">Visitor Guidelines</a></li>
+        <li><a href="patient-stories.html">Patient Stories</a></li>
       </ul>
     </div>
 
@@ -204,18 +275,21 @@
       <h4>Services</h4>
       <ul>
         <li><a href="services-primary-care.html">Primary Care</a></li>
+        <li><a href="services-pediatrics.html">Pediatrics</a></li>
         <li><a href="services-cardiology.html">Cardiology</a></li>
-        <li><a href="coming-soon.html?page=Urgent+Care">Urgent Care</a></li>
+        <li><a href="services-urgent-care.html">Urgent Care</a></li>
         <li><a href="virtual-care.html">Virtual Care</a></li>
+        <li><a href="services-behavioral-health.html">Behavioral Health</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
       <h4>About Tread Health</h4>
       <ul>
-        <li><a href="coming-soon.html?page=Our+Story">Our Story</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
         <li><a href="careers.html">Careers</a></li>
-        <li><a href="coming-soon.html?page=Volunteering">Volunteering</a></li>
+        <li><a href="volunteering.html">Volunteering</a></li>
+        <li><a href="giving.html">Giving</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
@@ -241,17 +315,25 @@
   });
 </script>
 
+<!-- Playful motion (scroll pop-ins, count-ups). Safe to remove. -->
+<script src="motion.js" defer></script>
 
 <!-- Page info for Qualtrics targeting (JavaScript variable: window.treadPageInfo) -->
-<script>window.treadPageInfo = {"site": "tread-health", "page": "services-cardiology", "section": "services", "specialty": "cardiology"};
-document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-feedback]');if(b){window.treadPageInfo.pageFeedback=b.getAttribute('data-feedback');}});</script>
+<script>window.treadPageInfo = {"site": "tread-health", "page": "services-cardiology", "section": "services", "specialty": "cardiology"};</script>
 <!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
+
 <script type='text/javascript'>
+
 (function(){var g=function(g){
+
 this.go=function(){var a=document.createElement("script");a.type="text/javascript";a.src=g;document.body&&document.body.appendChild(a)};
+
 this.start=function(){var t=this;"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",function(){t.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){t.go()}):t.go()};};
-try{(new g("https://zn3jksy3gb60ib6m1-qhealth.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_3JKSy3gb60iB6m1")).start()}catch(i){}})();
-</script><div id='ZN_3JKSy3gb60iB6m1'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+
+try{(new g("https://zn0jvaixpvu5igezz-qdemo.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_0JvaiXpVU5igeZz")).start()}catch(i){}})();
+
+</script><div id='ZN_0JvaiXpVU5igeZz'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+
 <!--END WEBSITE FEEDBACK SNIPPET-->
 </body>
 </html>

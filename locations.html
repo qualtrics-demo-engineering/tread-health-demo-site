@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Locations | Tread Health</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme.css">
 </head>
 <body id="page-locations" data-page="locations" data-section="locations">
 <!-- Demo Disclaimer Banner (NOT a real healthcare provider) -->
@@ -49,17 +50,20 @@
             <h4>Featured Specialties</h4>
             <ul>
               <li><a href="services-primary-care.html">Primary Care</a></li>
+              <li><a href="services-pediatrics.html">Pediatrics</a></li>
               <li><a href="services-cardiology.html">Cardiology</a></li>
-              <li><a href="coming-soon.html?page=Urgent+Care">Urgent Care</a></li>
-              <li><a href="virtual-care.html">Virtual Care</a></li>
+              <li><a href="services-orthopedics.html">Orthopedics</a></li>
+              <li><a href="services-oncology.html">Oncology</a></li>
             </ul>
           </div>
           <div>
             <h4>More Services</h4>
             <ul>
-              <li><a href="coming-soon.html?page=Behavioral+Health">Behavioral Health</a></li>
-              <li><a href="coming-soon.html?page=Imaging+Services">Imaging Services</a></li>
-              <li><a href="coming-soon.html?page=Pharmacy">Pharmacy</a></li>
+              <li><a href="services-urgent-care.html">Urgent Care</a></li>
+              <li><a href="virtual-care.html">Virtual Care</a></li>
+              <li><a href="services-behavioral-health.html">Behavioral Health</a></li>
+              <li><a href="services-imaging.html">Imaging Services</a></li>
+              <li><a href="services-pharmacy.html">Pharmacy</a></li>
               <li><a href="services.html" class="link-arrow">View All Services &rarr;</a></li>
             </ul>
           </div>
@@ -83,8 +87,8 @@
           <div>
             <h4>Visiting</h4>
             <ul>
-              <li><a href="coming-soon.html?page=Accepted+Insurance">Accepted Insurance</a></li>
-              <li><a href="coming-soon.html?page=Visitor+Guidelines">Visitor Guidelines</a></li>
+              <li><a href="accepted-insurance.html">Accepted Insurance</a></li>
+              <li><a href="visitor-guidelines.html">Visitor Guidelines</a></li>
               <li><a href="locations.html" class="link-arrow">Find a Location &rarr;</a></li>
             </ul>
           </div>
@@ -107,13 +111,23 @@
 
     <p class="section-label">Services</p>
     <a href="services-primary-care.html" class="sub-link">Primary Care</a>
+    <a href="services-pediatrics.html" class="sub-link">Pediatrics</a>
     <a href="services-cardiology.html" class="sub-link">Cardiology</a>
+    <a href="services-orthopedics.html" class="sub-link">Orthopedics</a>
+    <a href="services-oncology.html" class="sub-link">Oncology</a>
+    <a href="services-urgent-care.html" class="sub-link">Urgent Care</a>
+    <a href="virtual-care.html" class="sub-link">Virtual Care</a>
+    <a href="services-behavioral-health.html" class="sub-link">Behavioral Health</a>
+    <a href="services-imaging.html" class="sub-link">Imaging Services</a>
+    <a href="services-pharmacy.html" class="sub-link">Pharmacy</a>
     <a href="services.html" class="sub-link" style="color:var(--blue);">View All Services &rarr;</a>
 
     <p class="section-label">Patients &amp; Visitors</p>
     <a href="myportal.html" class="sub-link">MyPortal Sign In</a>
     <a href="myportal-billing.html" class="sub-link">Pay a Bill</a>
     <a href="symptom-checker.html" class="sub-link">Symptom Checker</a>
+    <a href="accepted-insurance.html" class="sub-link">Accepted Insurance</a>
+    <a href="visitor-guidelines.html" class="sub-link">Visitor Guidelines</a>
 
     <a href="appointments.html" class="btn btn-primary">Schedule Appointment</a>
   </div>
@@ -123,7 +137,7 @@
 
 <section class="page-hero">
   <h1>Find a Location Near You</h1>
-  <p>Bright, modern facilities across the region — from our flagship campus to neighborhood clinics.</p>
+  <p>Bright, modern facilities across the region — from our hospital campus to neighborhood clinics.</p>
 </section>
 
 <section class="loc-section" id="location-finder">
@@ -131,118 +145,71 @@
     <span class="loc-toolbar__label">Filter by service</span>
     <button type="button" class="loc-chip is-active" data-filter="all">All Locations</button>
     <button type="button" class="loc-chip" data-filter="primary-care">Primary Care</button>
-    <button type="button" class="loc-chip" data-filter="cardiology">Cardiology</button>
     <button type="button" class="loc-chip" data-filter="pediatrics">Pediatrics</button>
+    <button type="button" class="loc-chip" data-filter="cardiology">Cardiology</button>
     <button type="button" class="loc-chip" data-filter="orthopedics">Orthopedics</button>
+    <button type="button" class="loc-chip" data-filter="oncology">Oncology</button>
+    <button type="button" class="loc-chip" data-filter="urgent-care">Urgent Care</button>
+    <button type="button" class="loc-chip" data-filter="imaging">Imaging</button>
+    <button type="button" class="loc-chip" data-filter="pharmacy">Pharmacy</button>
+    <button type="button" class="loc-chip" data-filter="behavioral-health">Behavioral Health</button>
     <button type="button" class="loc-chip" data-filter="emergency">Emergency</button>
   </div>
 
   <div class="loc-layout">
     <div class="loc-list" id="loc-list">
-    <article class="loc-card" id="loc-downtown" data-loc="downtown" data-services="primary-care cardiology emergency">
-      <svg class="loc-card__art" viewBox="0 0 400 150" role="img" aria-label="Illustration of the Downtown Campus hospital towers">
-  <defs><linearGradient id="skyD" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#CFE6F7"/><stop offset="1" stop-color="#EBF4FA"/></linearGradient></defs>
-  <rect width="400" height="150" fill="url(#skyD)"/>
-  <circle cx="340" cy="38" r="16" fill="#FFC96B"/>
-  <rect x="0" y="128" width="400" height="22" fill="#B9D3EA"/>
-  <rect x="60" y="48" width="70" height="80" fill="#0B2A54"/>
-  <rect x="140" y="26" width="120" height="102" fill="#0054CE"/>
-  <rect x="270" y="62" width="70" height="66" fill="#041E42"/>
-  <g fill="#fff" opacity="0.85">
-    <rect x="152" y="40" width="14" height="12"/><rect x="176" y="40" width="14" height="12"/><rect x="200" y="40" width="14" height="12"/><rect x="224" y="40" width="14" height="12"/>
-    <rect x="152" y="62" width="14" height="12"/><rect x="176" y="62" width="14" height="12"/><rect x="200" y="62" width="14" height="12"/><rect x="224" y="62" width="14" height="12"/>
-    <rect x="152" y="84" width="14" height="12"/><rect x="224" y="84" width="14" height="12"/>
-    <rect x="72" y="62" width="10" height="10"/><rect x="92" y="62" width="10" height="10"/><rect x="108" y="62" width="10" height="10"/>
-    <rect x="72" y="84" width="10" height="10"/><rect x="92" y="84" width="10" height="10"/><rect x="108" y="84" width="10" height="10"/>
-    <rect x="282" y="76" width="10" height="10"/><rect x="302" y="76" width="10" height="10"/><rect x="320" y="76" width="10" height="10"/>
-  </g>
-  <rect x="186" y="100" width="28" height="28" rx="3" fill="#fff"/>
-  <rect x="190" y="2" width="20" height="20" rx="4" fill="#FF8B6A" transform="translate(0,0)"/>
-  <path d="M200 6v12M194 12h12" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
-</svg>
+    <article class="loc-card" id="loc-downtown" data-loc="downtown" data-services="primary-care cardiology oncology imaging pharmacy behavioral-health emergency">
+      <img class="loc-card__photo" src="assets/img/tread-medical-center.jpg" alt="The Tread Medical Center hospital campus, with brick and glass buildings, an ambulance bay, and staff walking the paths" loading="lazy">
       <div class="loc-card__body">
-        <div class="loc-card__top"><span class="loc-card__num">1</span><h3>Downtown Campus</h3><span class="loc-badge ">24/7 Emergency</span></div>
+        <div class="loc-card__top"><span class="loc-card__num">1</span><h3>Tread Medical Center</h3><span class="loc-badge ">24/7 Emergency</span></div>
         <div class="loc-meta">
           <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg><span>500 Wellness Way, Metro City, ST 10001</span></p>
           <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg><span>(555) 010-2000</span></p>
           <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Emergency open 24/7 &middot; Clinics Mon&ndash;Fri, 7am&ndash;7pm</span></p>
         </div>
-        <div class="loc-amenities"><span>Parking garage</span><span>On-site pharmacy</span><span>Lab &amp; imaging</span></div>
-        <div class="loc-tags"><span class="tag">Primary Care</span><span class="tag">Cardiology</span><span class="tag">Emergency</span></div>
+        <div class="loc-amenities"><span>Parking garage</span><span>On-site pharmacy</span><span>Lab &amp; imaging</span><span>Wellness Hub</span></div>
+        <div class="loc-tags"><span class="tag">Primary Care</span><span class="tag">Cardiology</span><span class="tag">Oncology</span><span class="tag">Imaging</span><span class="tag">Emergency</span></div>
         <div class="loc-actions">
           <a href="coming-soon.html?page=Directions" class="btn btn-primary btn-sm">Get Directions</a>
-          <a href="doctors.html?location=Downtown+Campus" class="btn btn-outline btn-sm">View Doctors Here</a>
+          <a href="doctors.html?location=Tread+Medical+Center" class="btn btn-outline btn-sm">View Doctors Here</a>
         </div>
       </div>
     </article>
-    <article class="loc-card" id="loc-northside" data-loc="northside" data-services="primary-care pediatrics">
-      <svg class="loc-card__art" viewBox="0 0 400 150" role="img" aria-label="Illustration of the Northside Clinic neighborhood clinic">
-  <defs><linearGradient id="skyN" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D7ECFB"/><stop offset="1" stop-color="#EBF4FA"/></linearGradient></defs>
-  <rect width="400" height="150" fill="url(#skyN)"/>
-  <circle cx="60" cy="36" r="14" fill="#FFC96B"/>
-  <rect x="0" y="122" width="400" height="28" fill="#CFE8D5"/>
-  <path d="M0 132 H400" stroke="#fff" stroke-width="6" opacity="0.7"/>
-  <rect x="120" y="66" width="170" height="58" fill="#0054CE"/>
-  <path d="M110 68 L205 30 L300 68 Z" fill="#041E42"/>
-  <g fill="#fff" opacity="0.9">
-    <rect x="136" y="82" width="22" height="18"/><rect x="170" y="82" width="22" height="18"/><rect x="250" y="82" width="22" height="18"/>
-  </g>
-  <rect x="208" y="84" width="30" height="40" rx="3" fill="#fff"/>
-  <circle cx="205" cy="54" r="11" fill="#FF8B6A"/>
-  <path d="M205 48v12M199 54h12" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-  <g><rect x="52" y="96" width="8" height="28" fill="#6B4F3A"/><circle cx="56" cy="86" r="22" fill="#5FA777"/></g>
-  <g><rect x="334" y="100" width="7" height="24" fill="#6B4F3A"/><circle cx="337" cy="92" r="18" fill="#7DBE91"/></g>
-</svg>
+    <article class="loc-card" id="loc-northside" data-loc="northside" data-services="cardiology orthopedics imaging urgent-care">
+      <img class="loc-card__photo" src="assets/img/tread-north.jpg" alt="The Tread North building in winter, with a brick and glass entrance and a sign at the curb" loading="lazy">
       <div class="loc-card__body">
-        <div class="loc-card__top"><span class="loc-card__num">2</span><h3>Northside Clinic</h3><span class="loc-badge loc-badge--soft">Walk-ins welcome</span></div>
+        <div class="loc-card__top"><span class="loc-card__num">2</span><h3>Tread North</h3><span class="loc-badge loc-badge--soft">Imaging on site</span></div>
         <div class="loc-meta">
           <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg><span>140 Aspen Grove Rd, Metro City, ST 10032</span></p>
           <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg><span>(555) 010-2040</span></p>
-          <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Mon&ndash;Fri, 8am&ndash;6pm &middot; Sat, 9am&ndash;1pm</span></p>
+          <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Mon&ndash;Fri, 7am&ndash;7pm &middot; Sat, 8am&ndash;2pm</span></p>
         </div>
-        <div class="loc-amenities"><span>Free parking</span><span>Kids&rsquo; play area</span><span>Lab draws</span></div>
-        <div class="loc-tags"><span class="tag">Primary Care</span><span class="tag">Pediatrics</span></div>
+        <div class="loc-amenities"><span>Free parking</span><span>X-ray &amp; imaging</span><span>Urgent care</span></div>
+        <div class="loc-tags"><span class="tag">Cardiology</span><span class="tag">Orthopedics</span><span class="tag">Imaging</span><span class="tag">Urgent Care</span></div>
         <div class="loc-actions">
           <a href="coming-soon.html?page=Directions" class="btn btn-primary btn-sm">Get Directions</a>
-          <a href="doctors.html?location=Northside+Clinic" class="btn btn-outline btn-sm">View Doctors Here</a>
+          <a href="doctors.html?location=Tread+North" class="btn btn-outline btn-sm">View Doctors Here</a>
         </div>
       </div>
     </article>
-    <article class="loc-card" id="loc-riverside" data-loc="riverside" data-services="cardiology orthopedics">
-      <svg class="loc-card__art" viewBox="0 0 400 150" role="img" aria-label="Illustration of Riverside Medical Center beside the river">
-  <defs><linearGradient id="skyR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#CFE6F7"/><stop offset="1" stop-color="#EBF4FA"/></linearGradient></defs>
-  <rect width="400" height="150" fill="url(#skyR)"/>
-  <circle cx="330" cy="34" r="15" fill="#FFC96B"/>
-  <rect x="0" y="104" width="400" height="46" fill="#9CCBEA"/>
-  <path d="M0 120 q25 -8 50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0" fill="none" stroke="#fff" stroke-width="3" opacity="0.7"/>
-  <path d="M0 138 q25 -8 50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0" fill="none" stroke="#fff" stroke-width="3" opacity="0.5"/>
-  <rect x="0" y="96" width="400" height="10" fill="#B9D3EA"/>
-  <rect x="70" y="44" width="150" height="54" fill="#0054CE"/>
-  <rect x="220" y="62" width="100" height="36" fill="#041E42"/>
-  <g fill="#fff" opacity="0.88">
-    <rect x="84" y="56" width="16" height="12"/><rect x="110" y="56" width="16" height="12"/><rect x="136" y="56" width="16" height="12"/><rect x="162" y="56" width="16" height="12"/><rect x="188" y="56" width="16" height="12"/>
-    <rect x="84" y="76" width="16" height="12"/><rect x="162" y="76" width="16" height="12"/><rect x="188" y="76" width="16" height="12"/>
-    <rect x="234" y="72" width="14" height="10"/><rect x="258" y="72" width="14" height="10"/><rect x="282" y="72" width="14" height="10"/>
-  </g>
-  <rect x="124" y="74" width="28" height="24" rx="3" fill="#fff"/>
-  <rect x="136" y="22" width="20" height="20" rx="4" fill="#FF8B6A"/>
-  <path d="M146 26v12M140 32h12" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
-</svg>
+    <article class="loc-card" id="loc-riverside" data-loc="riverside" data-services="primary-care pediatrics urgent-care pharmacy behavioral-health">
+      <img class="loc-card__photo" src="assets/img/tread-clinic.jpg" alt="The Tread Clinic entrance, with signs for primary care, pediatrics, lab services, and walk-ins" loading="lazy">
       <div class="loc-card__body">
-        <div class="loc-card__top"><span class="loc-card__num">3</span><h3>Riverside Medical Center</h3><span class="loc-badge loc-badge--soft">Imaging on site</span></div>
+        <div class="loc-card__top"><span class="loc-card__num">3</span><h3>Tread Clinic</h3><span class="loc-badge loc-badge--soft">Walk-ins welcome</span></div>
         <div class="loc-meta">
           <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg><span>88 Riverside Pkwy, Metro City, ST 10055</span></p>
           <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg><span>(555) 010-2080</span></p>
-          <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Mon&ndash;Fri, 7am&ndash;7pm</span></p>
+          <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Mon&ndash;Fri, 8am&ndash;6pm &middot; Sat, 9am&ndash;1pm</span></p>
         </div>
-        <div class="loc-amenities"><span>Free parking</span><span>Physical therapy</span><span>Imaging suite</span></div>
-        <div class="loc-tags"><span class="tag">Cardiology</span><span class="tag">Orthopedics</span></div>
+        <div class="loc-amenities"><span>Free parking</span><span>Kids&rsquo; play area</span><span>Lab draws</span><span>Pharmacy</span></div>
+        <div class="loc-tags"><span class="tag">Primary Care</span><span class="tag">Pediatrics</span><span class="tag">Urgent Care</span><span class="tag">Pharmacy</span></div>
         <div class="loc-actions">
           <a href="coming-soon.html?page=Directions" class="btn btn-primary btn-sm">Get Directions</a>
-          <a href="doctors.html?location=Riverside+Medical+Center" class="btn btn-outline btn-sm">View Doctors Here</a>
+          <a href="doctors.html?location=Tread+Clinic" class="btn btn-outline btn-sm">View Doctors Here</a>
         </div>
       </div>
     </article>
+    
     </div>
 
     <aside class="loc-map" id="loc-map" aria-label="Location map">
@@ -267,23 +234,23 @@
       <text x="58" y="418" transform="rotate(3 58 418)">Riverside Pkwy</text>
       <text x="64" y="352" fill="#6BA882">Elm Park</text>
     </g>
-    <g class="loc-pin" data-loc="northside" transform="translate(185,100)" tabindex="0" role="button" aria-label="Northside Clinic">
+    <g class="loc-pin" data-loc="northside" transform="translate(185,100)" tabindex="0" role="button" aria-label="Tread North">
       <circle class="pin-pulse" cx="0" cy="-28" r="26"/>
       <path class="pin-shape" d="M0,0 C-6,-10 -15,-16 -15,-28 A15,15 0 1 1 15,-28 C15,-16 6,-10 0,0 Z"/>
       <text x="0" y="-23">2</text>
-      <text class="pin-label" x="0" y="16">Northside Clinic</text>
+      <text class="pin-label" x="0" y="16">Tread North</text>
     </g>
-    <g class="loc-pin" data-loc="downtown" transform="translate(272,232)" tabindex="0" role="button" aria-label="Downtown Campus">
+    <g class="loc-pin" data-loc="downtown" transform="translate(272,232)" tabindex="0" role="button" aria-label="Tread Medical Center">
       <circle class="pin-pulse" cx="0" cy="-28" r="26"/>
       <path class="pin-shape" d="M0,0 C-6,-10 -15,-16 -15,-28 A15,15 0 1 1 15,-28 C15,-16 6,-10 0,0 Z"/>
       <text x="0" y="-23">1</text>
-      <text class="pin-label" x="0" y="16">Downtown Campus</text>
+      <text class="pin-label" x="0" y="16">Tread Medical Center</text>
     </g>
-    <g class="loc-pin" data-loc="riverside" transform="translate(430,392)" tabindex="0" role="button" aria-label="Riverside Medical Center">
+    <g class="loc-pin" data-loc="riverside" transform="translate(430,392)" tabindex="0" role="button" aria-label="Tread Clinic">
       <circle class="pin-pulse" cx="0" cy="-28" r="26"/>
       <path class="pin-shape" d="M0,0 C-6,-10 -15,-16 -15,-28 A15,15 0 1 1 15,-28 C15,-16 6,-10 0,0 Z"/>
       <text x="0" y="-23">3</text>
-      <text class="pin-label" x="0" y="16">Riverside Medical Center</text>
+      <text class="pin-label" x="0" y="16">Tread Clinic</text>
     </g>
   </svg>
       <div class="loc-map__legend">
@@ -297,14 +264,7 @@
 </section>
 
 <div style="padding:8px 20px 72px;">
-  <div id="qsi-survey-locations" class="survey-embed-slot">
-    Qualtrics survey embed target — was it easy to find a location?
-    <div class="thumbs">
-      <button type="button" class="thumb-up" data-feedback="up" aria-label="Yes, this helped"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-7"></path></svg></button>
-      <button type="button" class="thumb-down" data-feedback="down" aria-label="No, I still have questions"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="transform: scaleY(-1);"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-7"></path></svg></button>
-    </div>
-    <code>#qsi-survey-locations</code>
-  </div>
+  <div id="qsi-survey-locations" class="tread-embedded-feedback"></div>
 </div>
 
 <script>
@@ -368,7 +328,7 @@
       </div>
     </div>
 
-    <div class="footer-col">
+        <div class="footer-col">
       <h4>I Would Like To</h4>
       <ul>
         <li><a href="doctors.html">Find a Doctor</a></li>
@@ -384,8 +344,9 @@
       <ul>
         <li><a href="myportal.html">MyPortal Sign In</a></li>
         <li><a href="myportal-billing.html">Pay a Bill</a></li>
-        <li><a href="coming-soon.html?page=Accepted+Insurance">Accepted Insurance</a></li>
-        <li><a href="coming-soon.html?page=Visitor+Guidelines">Visitor Guidelines</a></li>
+        <li><a href="accepted-insurance.html">Accepted Insurance</a></li>
+        <li><a href="visitor-guidelines.html">Visitor Guidelines</a></li>
+        <li><a href="patient-stories.html">Patient Stories</a></li>
       </ul>
     </div>
 
@@ -393,18 +354,21 @@
       <h4>Services</h4>
       <ul>
         <li><a href="services-primary-care.html">Primary Care</a></li>
+        <li><a href="services-pediatrics.html">Pediatrics</a></li>
         <li><a href="services-cardiology.html">Cardiology</a></li>
-        <li><a href="coming-soon.html?page=Urgent+Care">Urgent Care</a></li>
+        <li><a href="services-urgent-care.html">Urgent Care</a></li>
         <li><a href="virtual-care.html">Virtual Care</a></li>
+        <li><a href="services-behavioral-health.html">Behavioral Health</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
       <h4>About Tread Health</h4>
       <ul>
-        <li><a href="coming-soon.html?page=Our+Story">Our Story</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
         <li><a href="careers.html">Careers</a></li>
-        <li><a href="coming-soon.html?page=Volunteering">Volunteering</a></li>
+        <li><a href="volunteering.html">Volunteering</a></li>
+        <li><a href="giving.html">Giving</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
@@ -431,16 +395,26 @@
 </script>
 
 
+<!-- Playful motion (scroll pop-ins, count-ups). Safe to remove. -->
+<script src="motion.js" defer></script>
+
 <!-- Page info for Qualtrics targeting (JavaScript variable: window.treadPageInfo) -->
 <script>window.treadPageInfo = {"site": "tread-health", "page": "locations", "section": "locations"};
 document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-feedback]');if(b){window.treadPageInfo.pageFeedback=b.getAttribute('data-feedback');}});</script>
 <!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
+
 <script type='text/javascript'>
+
 (function(){var g=function(g){
+
 this.go=function(){var a=document.createElement("script");a.type="text/javascript";a.src=g;document.body&&document.body.appendChild(a)};
+
 this.start=function(){var t=this;"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",function(){t.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){t.go()}):t.go()};};
-try{(new g("https://zn3jksy3gb60ib6m1-qhealth.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_3JKSy3gb60iB6m1")).start()}catch(i){}})();
-</script><div id='ZN_3JKSy3gb60iB6m1'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+
+try{(new g("https://zn0jvaixpvu5igezz-qdemo.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_0JvaiXpVU5igeZz")).start()}catch(i){}})();
+
+</script><div id='ZN_0JvaiXpVU5igeZz'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+
 <!--END WEBSITE FEEDBACK SNIPPET-->
 </body>
 </html>

@@ -5,8 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Patients & Visitors | Tread Health</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme.css">
 </head>
 <body id="page-patients-visitors" data-page="patients-visitors" data-section="patients">
+
 <!-- Demo Disclaimer Banner (NOT a real healthcare provider) -->
 <div class="demo-banner">
   ⚠️ This is a fictional demo website built for a product demonstration. Tread Health is not a real healthcare provider. For medical emergencies, call 911.
@@ -27,7 +29,6 @@
   </div>
 </div>
 
-<!-- Main Navigation -->
 <header class="site-header">
   <div class="container-lg header-inner">
 
@@ -49,17 +50,20 @@
             <h4>Featured Specialties</h4>
             <ul>
               <li><a href="services-primary-care.html">Primary Care</a></li>
+              <li><a href="services-pediatrics.html">Pediatrics</a></li>
               <li><a href="services-cardiology.html">Cardiology</a></li>
-              <li><a href="coming-soon.html?page=Urgent+Care">Urgent Care</a></li>
-              <li><a href="virtual-care.html">Virtual Care</a></li>
+              <li><a href="services-orthopedics.html">Orthopedics</a></li>
+              <li><a href="services-oncology.html">Oncology</a></li>
             </ul>
           </div>
           <div>
             <h4>More Services</h4>
             <ul>
-              <li><a href="coming-soon.html?page=Behavioral+Health">Behavioral Health</a></li>
-              <li><a href="coming-soon.html?page=Imaging+Services">Imaging Services</a></li>
-              <li><a href="coming-soon.html?page=Pharmacy">Pharmacy</a></li>
+              <li><a href="services-urgent-care.html">Urgent Care</a></li>
+              <li><a href="virtual-care.html">Virtual Care</a></li>
+              <li><a href="services-behavioral-health.html">Behavioral Health</a></li>
+              <li><a href="services-imaging.html">Imaging Services</a></li>
+              <li><a href="services-pharmacy.html">Pharmacy</a></li>
               <li><a href="services.html" class="link-arrow">View All Services &rarr;</a></li>
             </ul>
           </div>
@@ -83,8 +87,8 @@
           <div>
             <h4>Visiting</h4>
             <ul>
-              <li><a href="coming-soon.html?page=Accepted+Insurance">Accepted Insurance</a></li>
-              <li><a href="coming-soon.html?page=Visitor+Guidelines">Visitor Guidelines</a></li>
+              <li><a href="accepted-insurance.html">Accepted Insurance</a></li>
+              <li><a href="visitor-guidelines.html">Visitor Guidelines</a></li>
               <li><a href="locations.html" class="link-arrow">Find a Location &rarr;</a></li>
             </ul>
           </div>
@@ -107,43 +111,45 @@
 
     <p class="section-label">Services</p>
     <a href="services-primary-care.html" class="sub-link">Primary Care</a>
+    <a href="services-pediatrics.html" class="sub-link">Pediatrics</a>
     <a href="services-cardiology.html" class="sub-link">Cardiology</a>
+    <a href="services-orthopedics.html" class="sub-link">Orthopedics</a>
+    <a href="services-oncology.html" class="sub-link">Oncology</a>
+    <a href="services-urgent-care.html" class="sub-link">Urgent Care</a>
+    <a href="virtual-care.html" class="sub-link">Virtual Care</a>
+    <a href="services-behavioral-health.html" class="sub-link">Behavioral Health</a>
+    <a href="services-imaging.html" class="sub-link">Imaging Services</a>
+    <a href="services-pharmacy.html" class="sub-link">Pharmacy</a>
     <a href="services.html" class="sub-link" style="color:var(--blue);">View All Services &rarr;</a>
 
     <p class="section-label">Patients &amp; Visitors</p>
     <a href="myportal.html" class="sub-link">MyPortal Sign In</a>
     <a href="myportal-billing.html" class="sub-link">Pay a Bill</a>
     <a href="symptom-checker.html" class="sub-link">Symptom Checker</a>
+    <a href="accepted-insurance.html" class="sub-link">Accepted Insurance</a>
+    <a href="visitor-guidelines.html" class="sub-link">Visitor Guidelines</a>
 
     <a href="appointments.html" class="btn btn-primary">Schedule Appointment</a>
   </div>
 </header>
 
 <nav class="breadcrumb"><div class="container"><a href="index.html">Home</a> / Patients &amp; Visitors</div></nav>
-
 <section class="page-hero">
   <h1>Patients &amp; Visitors</h1>
   <p>Everything you need for your visit, your care, and managing your health online.</p>
 </section>
-
-<div class="content-grid">
-  <div class="content-block">
-    <h3>MyPortal</h3>
-    <ul>
-      <li><a href="myportal.html" class="list-link">Sign In / Register <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a></li>
-      <li><a href="myportal-billing.html" class="list-link">Pay a Bill <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a></li>
-      <li><a href="symptom-checker.html" class="list-link">Symptom Checker <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a></li>
-    </ul>
+<section class="section-white" style="padding-top:56px;">
+  <div class="specialty-grid">
+    <a href="myportal.html" class="specialty-card specialty-card--blue"><div class="specialty-card__icon"><img src="assets/doodles/shield.svg" alt=""></div><h3>MyPortal</h3><p>Sign in to see results, messages, and appointments.</p><span class="learn-more">Open <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span></a>
+    <a href="myportal-billing.html" class="specialty-card specialty-card--mint"><div class="specialty-card__icon"><img src="assets/doodles/calendar.svg" alt=""></div><h3>Pay a Bill</h3><p>Review your balance and make a payment online.</p><span class="learn-more">Open <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span></a>
+    <a href="symptom-checker.html" class="specialty-card specialty-card--sun"><div class="specialty-card__icon"><img src="assets/doodles/thermometer.svg" alt=""></div><h3>Symptom Checker</h3><p>Not sure where to go? Answer four quick questions.</p><span class="learn-more">Open <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span></a>
+    <a href="accepted-insurance.html" class="specialty-card specialty-card--purple"><div class="specialty-card__icon"><img src="assets/doodles/clipboard.svg" alt=""></div><h3>Accepted Insurance</h3><p>Find your plan and check what is covered.</p><span class="learn-more">Open <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span></a>
+    <a href="visitor-guidelines.html" class="specialty-card specialty-card--coral"><div class="specialty-card__icon"><img src="assets/doodles/clock.svg" alt=""></div><h3>Visitor Guidelines</h3><p>Hours, parking, and what to know before you visit.</p><span class="learn-more">Open <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span></a>
+    <a href="locations.html" class="specialty-card specialty-card--pink"><div class="specialty-card__icon"><img src="assets/doodles/pin.svg" alt=""></div><h3>Find a Location</h3><p>Hours, directions, and photos of each place.</p><span class="learn-more">Open <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span></a>
+    <a href="patient-stories.html" class="specialty-card specialty-card--blue"><div class="specialty-card__icon"><img src="assets/doodles/heart.svg" alt=""></div><h3>Patient Stories</h3><p>Moments of care, told by our neighbors.</p><span class="learn-more">Open <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span></a>
+    <a href="volunteering.html" class="specialty-card specialty-card--mint"><div class="specialty-card__icon"><img src="assets/doodles/footprints.svg" alt=""></div><h3>Volunteering</h3><p>Lend a hand, a smile, or a pair of walking shoes.</p><span class="learn-more">Open <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span></a>
   </div>
-  <div class="content-block">
-    <h3>Visiting</h3>
-    <ul>
-      <li><span class="list-static">Accepted Insurance <span class="soon-tag">Coming Soon</span></span></li>
-      <li><span class="list-static">Visitor Guidelines <span class="soon-tag">Coming Soon</span></span></li>
-      <li><a href="locations.html" class="list-link">Find a Location <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a></li>
-    </ul>
-  </div>
-</div>
+</section>
 
 <!-- Footer -->
 <footer class="site-footer">
@@ -164,7 +170,7 @@
       </div>
     </div>
 
-    <div class="footer-col">
+        <div class="footer-col">
       <h4>I Would Like To</h4>
       <ul>
         <li><a href="doctors.html">Find a Doctor</a></li>
@@ -180,8 +186,9 @@
       <ul>
         <li><a href="myportal.html">MyPortal Sign In</a></li>
         <li><a href="myportal-billing.html">Pay a Bill</a></li>
-        <li><a href="coming-soon.html?page=Accepted+Insurance">Accepted Insurance</a></li>
-        <li><a href="coming-soon.html?page=Visitor+Guidelines">Visitor Guidelines</a></li>
+        <li><a href="accepted-insurance.html">Accepted Insurance</a></li>
+        <li><a href="visitor-guidelines.html">Visitor Guidelines</a></li>
+        <li><a href="patient-stories.html">Patient Stories</a></li>
       </ul>
     </div>
 
@@ -189,18 +196,21 @@
       <h4>Services</h4>
       <ul>
         <li><a href="services-primary-care.html">Primary Care</a></li>
+        <li><a href="services-pediatrics.html">Pediatrics</a></li>
         <li><a href="services-cardiology.html">Cardiology</a></li>
-        <li><a href="coming-soon.html?page=Urgent+Care">Urgent Care</a></li>
+        <li><a href="services-urgent-care.html">Urgent Care</a></li>
         <li><a href="virtual-care.html">Virtual Care</a></li>
+        <li><a href="services-behavioral-health.html">Behavioral Health</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
       <h4>About Tread Health</h4>
       <ul>
-        <li><a href="coming-soon.html?page=Our+Story">Our Story</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
         <li><a href="careers.html">Careers</a></li>
-        <li><a href="coming-soon.html?page=Volunteering">Volunteering</a></li>
+        <li><a href="volunteering.html">Volunteering</a></li>
+        <li><a href="giving.html">Giving</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
@@ -226,17 +236,25 @@
   });
 </script>
 
+<!-- Playful motion (scroll pop-ins, count-ups). Safe to remove. -->
+<script src="motion.js" defer></script>
 
 <!-- Page info for Qualtrics targeting (JavaScript variable: window.treadPageInfo) -->
-<script>window.treadPageInfo = {"site": "tread-health", "page": "patients-visitors", "section": "patients"};
-document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-feedback]');if(b){window.treadPageInfo.pageFeedback=b.getAttribute('data-feedback');}});</script>
+<script>window.treadPageInfo = {"site": "tread-health", "page": "patients-visitors", "section": "patients"};</script>
 <!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
+
 <script type='text/javascript'>
+
 (function(){var g=function(g){
+
 this.go=function(){var a=document.createElement("script");a.type="text/javascript";a.src=g;document.body&&document.body.appendChild(a)};
+
 this.start=function(){var t=this;"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",function(){t.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){t.go()}):t.go()};};
-try{(new g("https://zn3jksy3gb60ib6m1-qhealth.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_3JKSy3gb60iB6m1")).start()}catch(i){}})();
-</script><div id='ZN_3JKSy3gb60iB6m1'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+
+try{(new g("https://zn0jvaixpvu5igezz-qdemo.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_0JvaiXpVU5igeZz")).start()}catch(i){}})();
+
+</script><div id='ZN_0JvaiXpVU5igeZz'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+
 <!--END WEBSITE FEEDBACK SNIPPET-->
 </body>
 </html>

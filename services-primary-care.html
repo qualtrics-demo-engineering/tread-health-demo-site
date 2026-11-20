@@ -5,8 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Primary Care | Tread Health</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme.css">
 </head>
-<body id="page-services-primary-care" data-page="services-primary-care" data-section="services" data-specialty="primary-care">
+<body id="page-services-primary-care" data-page="services-primary-care" data-section="services">
+
 <!-- Demo Disclaimer Banner (NOT a real healthcare provider) -->
 <div class="demo-banner">
   ⚠️ This is a fictional demo website built for a product demonstration. Tread Health is not a real healthcare provider. For medical emergencies, call 911.
@@ -27,7 +29,6 @@
   </div>
 </div>
 
-<!-- Main Navigation -->
 <header class="site-header">
   <div class="container-lg header-inner">
 
@@ -49,17 +50,20 @@
             <h4>Featured Specialties</h4>
             <ul>
               <li><a href="services-primary-care.html">Primary Care</a></li>
+              <li><a href="services-pediatrics.html">Pediatrics</a></li>
               <li><a href="services-cardiology.html">Cardiology</a></li>
-              <li><a href="coming-soon.html?page=Urgent+Care">Urgent Care</a></li>
-              <li><a href="virtual-care.html">Virtual Care</a></li>
+              <li><a href="services-orthopedics.html">Orthopedics</a></li>
+              <li><a href="services-oncology.html">Oncology</a></li>
             </ul>
           </div>
           <div>
             <h4>More Services</h4>
             <ul>
-              <li><a href="coming-soon.html?page=Behavioral+Health">Behavioral Health</a></li>
-              <li><a href="coming-soon.html?page=Imaging+Services">Imaging Services</a></li>
-              <li><a href="coming-soon.html?page=Pharmacy">Pharmacy</a></li>
+              <li><a href="services-urgent-care.html">Urgent Care</a></li>
+              <li><a href="virtual-care.html">Virtual Care</a></li>
+              <li><a href="services-behavioral-health.html">Behavioral Health</a></li>
+              <li><a href="services-imaging.html">Imaging Services</a></li>
+              <li><a href="services-pharmacy.html">Pharmacy</a></li>
               <li><a href="services.html" class="link-arrow">View All Services &rarr;</a></li>
             </ul>
           </div>
@@ -83,8 +87,8 @@
           <div>
             <h4>Visiting</h4>
             <ul>
-              <li><a href="coming-soon.html?page=Accepted+Insurance">Accepted Insurance</a></li>
-              <li><a href="coming-soon.html?page=Visitor+Guidelines">Visitor Guidelines</a></li>
+              <li><a href="accepted-insurance.html">Accepted Insurance</a></li>
+              <li><a href="visitor-guidelines.html">Visitor Guidelines</a></li>
               <li><a href="locations.html" class="link-arrow">Find a Location &rarr;</a></li>
             </ul>
           </div>
@@ -107,58 +111,124 @@
 
     <p class="section-label">Services</p>
     <a href="services-primary-care.html" class="sub-link">Primary Care</a>
+    <a href="services-pediatrics.html" class="sub-link">Pediatrics</a>
     <a href="services-cardiology.html" class="sub-link">Cardiology</a>
+    <a href="services-orthopedics.html" class="sub-link">Orthopedics</a>
+    <a href="services-oncology.html" class="sub-link">Oncology</a>
+    <a href="services-urgent-care.html" class="sub-link">Urgent Care</a>
+    <a href="virtual-care.html" class="sub-link">Virtual Care</a>
+    <a href="services-behavioral-health.html" class="sub-link">Behavioral Health</a>
+    <a href="services-imaging.html" class="sub-link">Imaging Services</a>
+    <a href="services-pharmacy.html" class="sub-link">Pharmacy</a>
     <a href="services.html" class="sub-link" style="color:var(--blue);">View All Services &rarr;</a>
 
     <p class="section-label">Patients &amp; Visitors</p>
     <a href="myportal.html" class="sub-link">MyPortal Sign In</a>
     <a href="myportal-billing.html" class="sub-link">Pay a Bill</a>
     <a href="symptom-checker.html" class="sub-link">Symptom Checker</a>
+    <a href="accepted-insurance.html" class="sub-link">Accepted Insurance</a>
+    <a href="visitor-guidelines.html" class="sub-link">Visitor Guidelines</a>
 
     <a href="appointments.html" class="btn btn-primary">Schedule Appointment</a>
   </div>
 </header>
 
-<nav class="breadcrumb" style="background:var(--navy);"><div class="container" style="color:rgba(255,255,255,0.6);"><a href="index.html" style="color:rgba(255,255,255,0.6);">Home</a> / <a href="services.html" style="color:rgba(255,255,255,0.6);">Services</a> / Primary Care</div></nav>
+<nav class="breadcrumb"><div class="container"><a href="index.html">Home</a> / <a href="services.html">Services</a> / Primary Care</div></nav>
 
-<section class="specialty-hero">
-  <span class="badge">Featured Specialty</span>
-  <h1>Primary Care</h1>
-  <p>Comprehensive, whole-person care and wellness visits for every member of your family, from childhood through every stage of life.</p>
+<section class="svc-hero">
+  <div class="svc-hero__grid">
+    <div class="svc-hero__copy">
+      <h1>Primary Care</h1>
+      <p class="lead">Comprehensive, whole-person care and wellness visits for every member of your family, from childhood through every stage of life.</p>
+      <div class="fact-chips"><span><img src="assets/doodles/thermometer.svg" alt="">Same-day sick visits</span><span><img src="assets/doodles/calendar.svg" alt="">Accepting new patients</span><span><img src="assets/doodles/video-call.svg" alt="">In person or by video</span></div>
+      <div class="svc-hero__actions">
+        <a href="appointments.html" class="btn btn-primary btn-lg">Schedule an Appointment</a>
+        <a href="doctors.html?specialty=Primary%20Care" class="btn btn-outline btn-lg">Find a Primary Care Doctor</a>
+      </div>
+    </div>
+    <div class="svc-hero__art">
+      <img class="doodle bob" src="assets/doodles/stethoscope.svg" alt="" aria-hidden="true" style="width:76px; top:-8px; right:2%; --r:10deg;">
+      <img class="doodle bob-slow" src="assets/doodles/heart.svg" alt="" aria-hidden="true" style="width:44px; bottom:18%; left:-2%; --r:-8deg;">
+      <img class="doodle bob-slow" src="assets/doodles/sparkle.svg" alt="" aria-hidden="true" style="width:36px; top:30%; right:-3%;">
+      <div class="photo-frame"><img src="assets/img/exam-room-adult.jpg" alt="A doctor reviews a plan on a tablet with two patients in a bright exam room"></div>
+      <span class="callout" style="left:6%; bottom:-4px; rotate:-3deg;">your whole story</span>
+    </div>
+  </div>
 </section>
 
-<div class="info-grid">
-  <div class="info-main">
-    <h2>What We Treat</h2>
-    <p>Our primary care team is your first stop for everyday health needs — annual physicals, chronic condition management, preventive screenings, vaccinations, and same-day sick visits.</p>
-    <ul class="checklist">
-      <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Annual physicals &amp; wellness exams</li>
-      <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Chronic condition management (diabetes, hypertension, asthma)</li>
-      <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Vaccinations &amp; preventive screenings</li>
-      <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Same-day sick visits</li>
-    </ul>
-    <h2>What to Expect</h2>
-    <p>Your first visit includes a full health history review, a physical exam, and time to talk through any concerns — no rushing. We believe good primary care is built on an ongoing relationship, not a one-time appointment.</p>
-
-    <div id="qsi-survey-primary-care" class="survey-embed-slot">
-      Qualtrics survey embed target — did this page answer your questions?
-      <div class="thumbs">
-        <button type="button" class="thumb-up" data-feedback="up" aria-label="Yes, this helped"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-7"></path></svg></button>
-        <button type="button" class="thumb-down" data-feedback="down" aria-label="No, I still have questions"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="transform: scaleY(-1);"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-7"></path></svg></button>
+<div class="svc-layout">
+  <div class="svc-main">
+    <section>
+      <h2>What we treat</h2>
+      <p class="intro">Our primary care team is your first stop for everyday health needs, from annual physicals and chronic condition management to preventive screenings, vaccinations, and same-day sick visits.</p>
+      <div class="treat-grid">
+        <div class="treat-card treat-card--blue"><img src="assets/doodles/stethoscope.svg" alt=""><div><h3>Annual physicals & wellness exams</h3><p>A full check-in on your health, with time to ask anything.</p></div></div>
+        <div class="treat-card treat-card--purple"><img src="assets/doodles/clipboard.svg" alt=""><div><h3>Chronic condition management</h3><p>Diabetes, hypertension, asthma, and more, tracked and adjusted together.</p></div></div>
+        <div class="treat-card treat-card--mint"><img src="assets/doodles/shield.svg" alt=""><div><h3>Vaccinations & preventive screenings</h3><p>Stay ahead of problems with the right screenings at the right time.</p></div></div>
+        <div class="treat-card treat-card--coral"><img src="assets/doodles/thermometer.svg" alt=""><div><h3>Same-day sick visits</h3><p>Under the weather? We save time each day for sick visits.</p></div></div>
+        <div class="treat-card treat-card--sun"><img src="assets/doodles/sun.svg" alt=""><div><h3>Healthy habits coaching</h3><p>Practical help with sleep, movement, stress, and nutrition.</p></div></div>
+        <div class="treat-card treat-card--pink"><img src="assets/doodles/heart.svg" alt=""><div><h3>Referrals made easy</h3><p>Need a specialist? We connect you and keep everyone in the loop.</p></div></div>
       </div>
-      <code>#qsi-survey-primary-care</code>
-    </div>
+      
+    </section>
+
+    <section>
+      <h2>What to expect</h2>
+      <p class="intro">We believe good primary care is built on an ongoing relationship, not a one-time appointment.</p>
+      <div class="steps">
+        <div class="step"><h3>Book a visit</h3><p>Schedule online, by phone, or through MyPortal. Choose in person or video.</p></div>
+        <div class="step"><h3>Check in</h3><p>Arrive about 10 minutes early and bring your medication list. Or check in ahead of time in MyPortal.</p></div>
+        <div class="step"><h3>Talk it through</h3><p>Your first visit includes a full health history review, a physical exam, and time to talk through any concerns, with no rushing.</p></div>
+        <div class="step"><h3>Make a plan</h3><p>Together you choose next steps. Lab results and follow-ups arrive in MyPortal.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Who you will meet</h2>
+      <p class="intro">Real people who will know your name.</p>
+      <div class="team-strip"><a href="doctor-profile-primary-care.html" class="doc-bubble"><div class="doc-bubble__photo"><img src="assets/img/doctor-chen.jpg" alt="Dr. Maria Chen, MD" loading="lazy"></div><strong>Dr. Maria Chen</strong><span>Tread Medical Center</span></a><a href="doctor-profile-nair.html" class="doc-bubble"><div class="doc-bubble__photo"><img src="assets/img/doctor-nair.jpg" alt="Dr. Priya Nair, MD" loading="lazy"></div><strong>Dr. Priya Nair</strong><span>Tread Clinic</span></a></div>
+    </section>
+
+    <section>
+      <div class="quote-card">
+        <img class="doodle " src="assets/doodles/speech.svg" alt="" aria-hidden="true" style="">
+        <blockquote>&ldquo;I came in for a routine physical and left feeling like someone finally had my whole story.&rdquo;</blockquote>
+        <cite>Dana R., Primary care patient</cite>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Common questions</h2>
+      <div style="margin-top:18px;">
+        <details><summary>Do I need a referral to see a primary care doctor?</summary><div class="answer"><p>No. You can book directly with any Tread primary care doctor who is accepting new patients.</p></div></details>
+        <details><summary>What should I bring to my first visit?</summary><div class="answer"><p>Bring your photo ID, insurance card, a list of medications and supplements, and any questions on your mind. Past records are helpful but not required.</p></div></details>
+        <details><summary>Do you see children?</summary><div class="answer"><p>Our primary care doctors see patients of all ages. For babies, kids, and teens, many families also choose our <a href="services-pediatrics.html">Pediatrics</a> team.</p></div></details>
+        <details><summary>Can I switch doctors later?</summary><div class="answer"><p>Of course. If another Tread doctor is a better fit, call us or message us in MyPortal and we will help you switch.</p></div></details>
+      </div>
+    </section>
+
+    <div id="qsi-survey-primary-care" class="tread-embedded-feedback"></div>
   </div>
-  <div class="info-sidebar">
-    <h3>Ready to get started?</h3>
-    <a href="appointments.html" class="btn btn-primary">Schedule an Appointment</a>
-    <a href="doctors.html?specialty=Primary%20Care" class="btn btn-outline" style="width:100%; text-align:center; display:block;">Find a Primary Care Doctor</a>
-    <div class="info-sidebar-list">
-      <a href="doctor-profile-primary-care.html">Meet Dr. Maria Chen &rarr;</a>
-      <a href="locations.html">Find a Location &rarr;</a>
+
+  <aside class="svc-side">
+    <div class="info-sidebar">
+      <h3>Ready to get started?</h3>
+      <a href="appointments.html" class="btn btn-primary">Schedule an Appointment</a>
+      <a href="doctors.html?specialty=Primary%20Care" class="btn btn-outline">Find a Primary Care Doctor</a>
+      <div class="info-sidebar-list"><a href="doctor-profile-primary-care.html">Meet Dr. Maria Chen &rarr;</a><a href="doctor-profile-nair.html">Meet Dr. Priya Nair &rarr;</a></div>
+      <h4>Where to find us</h4><div class="where-list"><a class="where-card" href="locations.html"><img src="assets/img/tread-medical-center.jpg" alt="Tread Medical Center" loading="lazy"><div><strong>Tread Medical Center</strong><span>Our hospital campus, with emergency care open 24/7</span></div></a><a class="where-card" href="locations.html"><img src="assets/img/tread-clinic.jpg" alt="Tread Clinic" loading="lazy"><div><strong>Tread Clinic</strong><span>Primary care, pediatrics, lab, and walk-ins</span></div></a></div>
     </div>
-  </div>
+  </aside>
 </div>
+
+<section class="cta-band">
+  <img class="doodle " src="assets/doodles/sparkle.svg" alt="" aria-hidden="true" style="width:54px; top:16%; left:8%;">
+  <img class="doodle " src="assets/doodles/balloons.svg" alt="" aria-hidden="true" style="width:80px; bottom:12%; right:8%;">
+  <img class="doodle " src="assets/doodles/star.svg" alt="" aria-hidden="true" style="width:40px; top:20%; right:22%;">
+  <h2>Questions? We are happy to help.</h2>
+  <p>Call us at (555) 010-2000 or send a message in MyPortal.</p>
+  <a href="contact.html" class="btn btn-white btn-lg">Contact us</a>
+</section>
 
 <!-- Footer -->
 <footer class="site-footer">
@@ -179,7 +249,7 @@
       </div>
     </div>
 
-    <div class="footer-col">
+        <div class="footer-col">
       <h4>I Would Like To</h4>
       <ul>
         <li><a href="doctors.html">Find a Doctor</a></li>
@@ -195,8 +265,9 @@
       <ul>
         <li><a href="myportal.html">MyPortal Sign In</a></li>
         <li><a href="myportal-billing.html">Pay a Bill</a></li>
-        <li><a href="coming-soon.html?page=Accepted+Insurance">Accepted Insurance</a></li>
-        <li><a href="coming-soon.html?page=Visitor+Guidelines">Visitor Guidelines</a></li>
+        <li><a href="accepted-insurance.html">Accepted Insurance</a></li>
+        <li><a href="visitor-guidelines.html">Visitor Guidelines</a></li>
+        <li><a href="patient-stories.html">Patient Stories</a></li>
       </ul>
     </div>
 
@@ -204,18 +275,21 @@
       <h4>Services</h4>
       <ul>
         <li><a href="services-primary-care.html">Primary Care</a></li>
+        <li><a href="services-pediatrics.html">Pediatrics</a></li>
         <li><a href="services-cardiology.html">Cardiology</a></li>
-        <li><a href="coming-soon.html?page=Urgent+Care">Urgent Care</a></li>
+        <li><a href="services-urgent-care.html">Urgent Care</a></li>
         <li><a href="virtual-care.html">Virtual Care</a></li>
+        <li><a href="services-behavioral-health.html">Behavioral Health</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
       <h4>About Tread Health</h4>
       <ul>
-        <li><a href="coming-soon.html?page=Our+Story">Our Story</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
         <li><a href="careers.html">Careers</a></li>
-        <li><a href="coming-soon.html?page=Volunteering">Volunteering</a></li>
+        <li><a href="volunteering.html">Volunteering</a></li>
+        <li><a href="giving.html">Giving</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
@@ -241,17 +315,25 @@
   });
 </script>
 
+<!-- Playful motion (scroll pop-ins, count-ups). Safe to remove. -->
+<script src="motion.js" defer></script>
 
 <!-- Page info for Qualtrics targeting (JavaScript variable: window.treadPageInfo) -->
-<script>window.treadPageInfo = {"site": "tread-health", "page": "services-primary-care", "section": "services", "specialty": "primary-care"};
-document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-feedback]');if(b){window.treadPageInfo.pageFeedback=b.getAttribute('data-feedback');}});</script>
+<script>window.treadPageInfo = {"site": "tread-health", "page": "services-primary-care", "section": "services", "specialty": "primary-care"};</script>
 <!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
+
 <script type='text/javascript'>
+
 (function(){var g=function(g){
+
 this.go=function(){var a=document.createElement("script");a.type="text/javascript";a.src=g;document.body&&document.body.appendChild(a)};
+
 this.start=function(){var t=this;"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",function(){t.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){t.go()}):t.go()};};
-try{(new g("https://zn3jksy3gb60ib6m1-qhealth.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_3JKSy3gb60iB6m1")).start()}catch(i){}})();
-</script><div id='ZN_3JKSy3gb60iB6m1'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+
+try{(new g("https://zn0jvaixpvu5igezz-qdemo.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_0JvaiXpVU5igeZz")).start()}catch(i){}})();
+
+</script><div id='ZN_0JvaiXpVU5igeZz'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+
 <!--END WEBSITE FEEDBACK SNIPPET-->
 </body>
 </html>
